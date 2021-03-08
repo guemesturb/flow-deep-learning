@@ -1,0 +1,632 @@
+2021-01-30 00:09:30.475313: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2021-01-30 00:10:14.324501: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcuda.so.1
+2021-01-30 00:10:15.745692: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-01-30 00:10:15.747785: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0000:82:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-01-30 00:10:15.747861: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2021-01-30 00:10:15.946823: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2021-01-30 00:10:16.098302: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2021-01-30 00:10:16.125459: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2021-01-30 00:10:16.160546: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2021-01-30 00:10:16.166140: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2021-01-30 00:10:16.243158: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2021-01-30 00:10:16.243328: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-01-30 00:10:16.244406: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-01-30 00:10:16.245383: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0
+Using TensorFlow version:  2.3.0 , GPU: 1
+Using Keras version:  2.4.0
+2021-01-30 00:10:16.361078: I tensorflow/core/platform/profile_utils/cpu_utils.cc:104] CPU Frequency: 2499930000 Hz
+2021-01-30 00:10:16.362877: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x46ea1d0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-01-30 00:10:16.362907: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-01-30 00:10:16.487246: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-01-30 00:10:16.488399: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x4756600 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-01-30 00:10:16.488468: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-01-30 00:10:16.488792: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-01-30 00:10:16.489769: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0000:82:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-01-30 00:10:16.489814: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2021-01-30 00:10:16.489852: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2021-01-30 00:10:16.489890: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2021-01-30 00:10:16.489913: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2021-01-30 00:10:16.489934: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2021-01-30 00:10:16.489955: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2021-01-30 00:10:16.489976: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2021-01-30 00:10:16.490045: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-01-30 00:10:16.490965: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-01-30 00:10:16.491828: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0
+2021-01-30 00:10:16.491877: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2021-01-30 00:10:17.439644: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1257] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-01-30 00:10:17.439711: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1263]      0 
+2021-01-30 00:10:17.439725: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1276] 0:   N 
+2021-01-30 00:10:17.461098: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-01-30 00:10:17.462228: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-01-30 00:10:17.463224: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1402] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10068 MB memory) -> physical GPU (device: 0, name: GeForce RTX 2080 Ti, pci bus id: 0000:82:00.0, compute capability: 7.5)
+The inputs are normalized to have a unit Gaussian distribution
+Model: "Generator"
+__________________________________________________________________________________________________
+Layer (type)                    Output Shape         Param #     Connected to                     
+==================================================================================================
+low-res-input (InputLayer)      [(None, 1, 24, 24)]  0                                            
+__________________________________________________________________________________________________
+conv2d (Conv2D)                 (None, 64, 24, 24)   5248        low-res-input[0][0]              
+__________________________________________________________________________________________________
+p_re_lu (PReLU)                 (None, 64, 24, 24)   64          conv2d[0][0]                     
+__________________________________________________________________________________________________
+conv2d_1 (Conv2D)               (None, 64, 24, 24)   36928       p_re_lu[0][0]                    
+__________________________________________________________________________________________________
+batch_normalization (BatchNorma (None, 64, 24, 24)   256         conv2d_1[0][0]                   
+__________________________________________________________________________________________________
+p_re_lu_1 (PReLU)               (None, 64, 24, 24)   64          batch_normalization[0][0]        
+__________________________________________________________________________________________________
+conv2d_2 (Conv2D)               (None, 64, 24, 24)   36928       p_re_lu_1[0][0]                  
+__________________________________________________________________________________________________
+batch_normalization_1 (BatchNor (None, 64, 24, 24)   256         conv2d_2[0][0]                   
+__________________________________________________________________________________________________
+add (Add)                       (None, 64, 24, 24)   0           p_re_lu[0][0]                    
+                                                                 batch_normalization_1[0][0]      
+__________________________________________________________________________________________________
+conv2d_3 (Conv2D)               (None, 64, 24, 24)   36928       add[0][0]                        
+__________________________________________________________________________________________________
+batch_normalization_2 (BatchNor (None, 64, 24, 24)   256         conv2d_3[0][0]                   
+__________________________________________________________________________________________________
+p_re_lu_2 (PReLU)               (None, 64, 24, 24)   64          batch_normalization_2[0][0]      
+__________________________________________________________________________________________________
+conv2d_4 (Conv2D)               (None, 64, 24, 24)   36928       p_re_lu_2[0][0]                  
+__________________________________________________________________________________________________
+batch_normalization_3 (BatchNor (None, 64, 24, 24)   256         conv2d_4[0][0]                   
+__________________________________________________________________________________________________
+add_1 (Add)                     (None, 64, 24, 24)   0           add[0][0]                        
+                                                                 batch_normalization_3[0][0]      
+__________________________________________________________________________________________________
+conv2d_5 (Conv2D)               (None, 64, 24, 24)   36928       add_1[0][0]                      
+__________________________________________________________________________________________________
+batch_normalization_4 (BatchNor (None, 64, 24, 24)   256         conv2d_5[0][0]                   
+__________________________________________________________________________________________________
+p_re_lu_3 (PReLU)               (None, 64, 24, 24)   64          batch_normalization_4[0][0]      
+__________________________________________________________________________________________________
+conv2d_6 (Conv2D)               (None, 64, 24, 24)   36928       p_re_lu_3[0][0]                  
+__________________________________________________________________________________________________
+batch_normalization_5 (BatchNor (None, 64, 24, 24)   256         conv2d_6[0][0]                   
+__________________________________________________________________________________________________
+add_2 (Add)                     (None, 64, 24, 24)   0           add_1[0][0]                      
+                                                                 batch_normalization_5[0][0]      
+__________________________________________________________________________________________________
+conv2d_7 (Conv2D)               (None, 64, 24, 24)   36928       add_2[0][0]                      
+__________________________________________________________________________________________________
+batch_normalization_6 (BatchNor (None, 64, 24, 24)   256         conv2d_7[0][0]                   
+__________________________________________________________________________________________________
+p_re_lu_4 (PReLU)               (None, 64, 24, 24)   64          batch_normalization_6[0][0]      
+__________________________________________________________________________________________________
+conv2d_8 (Conv2D)               (None, 64, 24, 24)   36928       p_re_lu_4[0][0]                  
+__________________________________________________________________________________________________
+batch_normalization_7 (BatchNor (None, 64, 24, 24)   256         conv2d_8[0][0]                   
+__________________________________________________________________________________________________
+add_3 (Add)                     (None, 64, 24, 24)   0           add_2[0][0]                      
+                                                                 batch_normalization_7[0][0]      
+__________________________________________________________________________________________________
+conv2d_9 (Conv2D)               (None, 64, 24, 24)   36928       add_3[0][0]                      
+__________________________________________________________________________________________________
+batch_normalization_8 (BatchNor (None, 64, 24, 24)   256         conv2d_9[0][0]                   
+__________________________________________________________________________________________________
+p_re_lu_5 (PReLU)               (None, 64, 24, 24)   64          batch_normalization_8[0][0]      
+__________________________________________________________________________________________________
+conv2d_10 (Conv2D)              (None, 64, 24, 24)   36928       p_re_lu_5[0][0]                  
+__________________________________________________________________________________________________
+batch_normalization_9 (BatchNor (None, 64, 24, 24)   256         conv2d_10[0][0]                  
+__________________________________________________________________________________________________
+add_4 (Add)                     (None, 64, 24, 24)   0           add_3[0][0]                      
+                                                                 batch_normalization_9[0][0]      
+__________________________________________________________________________________________________
+conv2d_11 (Conv2D)              (None, 64, 24, 24)   36928       add_4[0][0]                      
+__________________________________________________________________________________________________
+batch_normalization_10 (BatchNo (None, 64, 24, 24)   256         conv2d_11[0][0]                  
+__________________________________________________________________________________________________
+p_re_lu_6 (PReLU)               (None, 64, 24, 24)   64          batch_normalization_10[0][0]     
+__________________________________________________________________________________________________
+conv2d_12 (Conv2D)              (None, 64, 24, 24)   36928       p_re_lu_6[0][0]                  
+__________________________________________________________________________________________________
+batch_normalization_11 (BatchNo (None, 64, 24, 24)   256         conv2d_12[0][0]                  
+__________________________________________________________________________________________________
+add_5 (Add)                     (None, 64, 24, 24)   0           add_4[0][0]                      
+                                                                 batch_normalization_11[0][0]     
+__________________________________________________________________________________________________
+conv2d_13 (Conv2D)              (None, 64, 24, 24)   36928       add_5[0][0]                      
+__________________________________________________________________________________________________
+batch_normalization_12 (BatchNo (None, 64, 24, 24)   256         conv2d_13[0][0]                  
+__________________________________________________________________________________________________
+p_re_lu_7 (PReLU)               (None, 64, 24, 24)   64          batch_normalization_12[0][0]     
+__________________________________________________________________________________________________
+conv2d_14 (Conv2D)              (None, 64, 24, 24)   36928       p_re_lu_7[0][0]                  
+__________________________________________________________________________________________________
+batch_normalization_13 (BatchNo (None, 64, 24, 24)   256         conv2d_14[0][0]                  
+__________________________________________________________________________________________________
+add_6 (Add)                     (None, 64, 24, 24)   0           add_5[0][0]                      
+                                                                 batch_normalization_13[0][0]     
+__________________________________________________________________________________________________
+conv2d_15 (Conv2D)              (None, 64, 24, 24)   36928       add_6[0][0]                      
+__________________________________________________________________________________________________
+batch_normalization_14 (BatchNo (None, 64, 24, 24)   256         conv2d_15[0][0]                  
+__________________________________________________________________________________________________
+p_re_lu_8 (PReLU)               (None, 64, 24, 24)   64          batch_normalization_14[0][0]     
+__________________________________________________________________________________________________
+conv2d_16 (Conv2D)              (None, 64, 24, 24)   36928       p_re_lu_8[0][0]                  
+__________________________________________________________________________________________________
+batch_normalization_15 (BatchNo (None, 64, 24, 24)   256         conv2d_16[0][0]                  
+__________________________________________________________________________________________________
+add_7 (Add)                     (None, 64, 24, 24)   0           add_6[0][0]                      
+                                                                 batch_normalization_15[0][0]     
+__________________________________________________________________________________________________
+conv2d_17 (Conv2D)              (None, 64, 24, 24)   36928       add_7[0][0]                      
+__________________________________________________________________________________________________
+batch_normalization_16 (BatchNo (None, 64, 24, 24)   256         conv2d_17[0][0]                  
+__________________________________________________________________________________________________
+p_re_lu_9 (PReLU)               (None, 64, 24, 24)   64          batch_normalization_16[0][0]     
+__________________________________________________________________________________________________
+conv2d_18 (Conv2D)              (None, 64, 24, 24)   36928       p_re_lu_9[0][0]                  
+__________________________________________________________________________________________________
+batch_normalization_17 (BatchNo (None, 64, 24, 24)   256         conv2d_18[0][0]                  
+__________________________________________________________________________________________________
+add_8 (Add)                     (None, 64, 24, 24)   0           add_7[0][0]                      
+                                                                 batch_normalization_17[0][0]     
+__________________________________________________________________________________________________
+conv2d_19 (Conv2D)              (None, 64, 24, 24)   36928       add_8[0][0]                      
+__________________________________________________________________________________________________
+batch_normalization_18 (BatchNo (None, 64, 24, 24)   256         conv2d_19[0][0]                  
+__________________________________________________________________________________________________
+p_re_lu_10 (PReLU)              (None, 64, 24, 24)   64          batch_normalization_18[0][0]     
+__________________________________________________________________________________________________
+conv2d_20 (Conv2D)              (None, 64, 24, 24)   36928       p_re_lu_10[0][0]                 
+__________________________________________________________________________________________________
+batch_normalization_19 (BatchNo (None, 64, 24, 24)   256         conv2d_20[0][0]                  
+__________________________________________________________________________________________________
+add_9 (Add)                     (None, 64, 24, 24)   0           add_8[0][0]                      
+                                                                 batch_normalization_19[0][0]     
+__________________________________________________________________________________________________
+conv2d_21 (Conv2D)              (None, 64, 24, 24)   36928       add_9[0][0]                      
+__________________________________________________________________________________________________
+batch_normalization_20 (BatchNo (None, 64, 24, 24)   256         conv2d_21[0][0]                  
+__________________________________________________________________________________________________
+p_re_lu_11 (PReLU)              (None, 64, 24, 24)   64          batch_normalization_20[0][0]     
+__________________________________________________________________________________________________
+conv2d_22 (Conv2D)              (None, 64, 24, 24)   36928       p_re_lu_11[0][0]                 
+__________________________________________________________________________________________________
+batch_normalization_21 (BatchNo (None, 64, 24, 24)   256         conv2d_22[0][0]                  
+__________________________________________________________________________________________________
+add_10 (Add)                    (None, 64, 24, 24)   0           add_9[0][0]                      
+                                                                 batch_normalization_21[0][0]     
+__________________________________________________________________________________________________
+conv2d_23 (Conv2D)              (None, 64, 24, 24)   36928       add_10[0][0]                     
+__________________________________________________________________________________________________
+batch_normalization_22 (BatchNo (None, 64, 24, 24)   256         conv2d_23[0][0]                  
+__________________________________________________________________________________________________
+p_re_lu_12 (PReLU)              (None, 64, 24, 24)   64          batch_normalization_22[0][0]     
+__________________________________________________________________________________________________
+conv2d_24 (Conv2D)              (None, 64, 24, 24)   36928       p_re_lu_12[0][0]                 
+__________________________________________________________________________________________________
+batch_normalization_23 (BatchNo (None, 64, 24, 24)   256         conv2d_24[0][0]                  
+__________________________________________________________________________________________________
+add_11 (Add)                    (None, 64, 24, 24)   0           add_10[0][0]                     
+                                                                 batch_normalization_23[0][0]     
+__________________________________________________________________________________________________
+conv2d_25 (Conv2D)              (None, 64, 24, 24)   36928       add_11[0][0]                     
+__________________________________________________________________________________________________
+batch_normalization_24 (BatchNo (None, 64, 24, 24)   256         conv2d_25[0][0]                  
+__________________________________________________________________________________________________
+p_re_lu_13 (PReLU)              (None, 64, 24, 24)   64          batch_normalization_24[0][0]     
+__________________________________________________________________________________________________
+conv2d_26 (Conv2D)              (None, 64, 24, 24)   36928       p_re_lu_13[0][0]                 
+__________________________________________________________________________________________________
+batch_normalization_25 (BatchNo (None, 64, 24, 24)   256         conv2d_26[0][0]                  
+__________________________________________________________________________________________________
+add_12 (Add)                    (None, 64, 24, 24)   0           add_11[0][0]                     
+                                                                 batch_normalization_25[0][0]     
+__________________________________________________________________________________________________
+conv2d_27 (Conv2D)              (None, 64, 24, 24)   36928       add_12[0][0]                     
+__________________________________________________________________________________________________
+batch_normalization_26 (BatchNo (None, 64, 24, 24)   256         conv2d_27[0][0]                  
+__________________________________________________________________________________________________
+p_re_lu_14 (PReLU)              (None, 64, 24, 24)   64          batch_normalization_26[0][0]     
+__________________________________________________________________________________________________
+conv2d_28 (Conv2D)              (None, 64, 24, 24)   36928       p_re_lu_14[0][0]                 
+__________________________________________________________________________________________________
+batch_normalization_27 (BatchNo (None, 64, 24, 24)   256         conv2d_28[0][0]                  
+__________________________________________________________________________________________________
+add_13 (Add)                    (None, 64, 24, 24)   0           add_12[0][0]                     
+                                                                 batch_normalization_27[0][0]     
+__________________________________________________________________________________________________
+conv2d_29 (Conv2D)              (None, 64, 24, 24)   36928       add_13[0][0]                     
+__________________________________________________________________________________________________
+batch_normalization_28 (BatchNo (None, 64, 24, 24)   256         conv2d_29[0][0]                  
+__________________________________________________________________________________________________
+p_re_lu_15 (PReLU)              (None, 64, 24, 24)   64          batch_normalization_28[0][0]     
+__________________________________________________________________________________________________
+conv2d_30 (Conv2D)              (None, 64, 24, 24)   36928       p_re_lu_15[0][0]                 
+__________________________________________________________________________________________________
+batch_normalization_29 (BatchNo (None, 64, 24, 24)   256         conv2d_30[0][0]                  
+__________________________________________________________________________________________________
+add_14 (Add)                    (None, 64, 24, 24)   0           add_13[0][0]                     
+                                                                 batch_normalization_29[0][0]     
+__________________________________________________________________________________________________
+conv2d_31 (Conv2D)              (None, 64, 24, 24)   36928       add_14[0][0]                     
+__________________________________________________________________________________________________
+batch_normalization_30 (BatchNo (None, 64, 24, 24)   256         conv2d_31[0][0]                  
+__________________________________________________________________________________________________
+p_re_lu_16 (PReLU)              (None, 64, 24, 24)   64          batch_normalization_30[0][0]     
+__________________________________________________________________________________________________
+conv2d_32 (Conv2D)              (None, 64, 24, 24)   36928       p_re_lu_16[0][0]                 
+__________________________________________________________________________________________________
+batch_normalization_31 (BatchNo (None, 64, 24, 24)   256         conv2d_32[0][0]                  
+__________________________________________________________________________________________________
+add_15 (Add)                    (None, 64, 24, 24)   0           add_14[0][0]                     
+                                                                 batch_normalization_31[0][0]     
+__________________________________________________________________________________________________
+conv2d_33 (Conv2D)              (None, 64, 24, 24)   36928       add_15[0][0]                     
+__________________________________________________________________________________________________
+batch_normalization_32 (BatchNo (None, 64, 24, 24)   256         conv2d_33[0][0]                  
+__________________________________________________________________________________________________
+add_16 (Add)                    (None, 64, 24, 24)   0           p_re_lu[0][0]                    
+                                                                 batch_normalization_32[0][0]     
+__________________________________________________________________________________________________
+conv2d_34 (Conv2D)              (None, 256, 24, 24)  147712      add_16[0][0]                     
+__________________________________________________________________________________________________
+lambda (Lambda)                 (None, 64, 48, 48)   0           conv2d_34[0][0]                  
+__________________________________________________________________________________________________
+leaky_re_lu (LeakyReLU)         (None, 64, 48, 48)   0           lambda[0][0]                     
+__________________________________________________________________________________________________
+conv2d_35 (Conv2D)              (None, 256, 48, 48)  147712      leaky_re_lu[0][0]                
+__________________________________________________________________________________________________
+lambda_1 (Lambda)               (None, 64, 96, 96)   0           conv2d_35[0][0]                  
+__________________________________________________________________________________________________
+leaky_re_lu_1 (LeakyReLU)       (None, 64, 96, 96)   0           lambda_1[0][0]                   
+__________________________________________________________________________________________________
+conv2d_36 (Conv2D)              (None, 256, 96, 96)  147712      leaky_re_lu_1[0][0]              
+__________________________________________________________________________________________________
+lambda_2 (Lambda)               (None, 64, 192, 192) 0           conv2d_36[0][0]                  
+__________________________________________________________________________________________________
+leaky_re_lu_2 (LeakyReLU)       (None, 64, 192, 192) 0           lambda_2[0][0]                   
+__________________________________________________________________________________________________
+conv2d_37 (Conv2D)              (None, 1, 192, 192)  5185        leaky_re_lu_2[0][0]              
+==================================================================================================
+Total params: 1,681,729
+Trainable params: 1,677,505
+Non-trainable params: 4,224
+__________________________________________________________________________________________________
+None
+Model: "Discriminator"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+high-res-input (InputLayer)  [(None, 1, 192, 192)]     0         
+_________________________________________________________________
+conv2d_38 (Conv2D)           (None, 64, 192, 192)      640       
+_________________________________________________________________
+leaky_re_lu_3 (LeakyReLU)    (None, 64, 192, 192)      0         
+_________________________________________________________________
+conv2d_39 (Conv2D)           (None, 64, 96, 96)        36928     
+_________________________________________________________________
+batch_normalization_33 (Batc (None, 64, 96, 96)        256       
+_________________________________________________________________
+leaky_re_lu_4 (LeakyReLU)    (None, 64, 96, 96)        0         
+_________________________________________________________________
+conv2d_40 (Conv2D)           (None, 128, 96, 96)       73856     
+_________________________________________________________________
+batch_normalization_34 (Batc (None, 128, 96, 96)       512       
+_________________________________________________________________
+leaky_re_lu_5 (LeakyReLU)    (None, 128, 96, 96)       0         
+_________________________________________________________________
+conv2d_41 (Conv2D)           (None, 128, 48, 48)       147584    
+_________________________________________________________________
+batch_normalization_35 (Batc (None, 128, 48, 48)       512       
+_________________________________________________________________
+leaky_re_lu_6 (LeakyReLU)    (None, 128, 48, 48)       0         
+_________________________________________________________________
+conv2d_42 (Conv2D)           (None, 256, 48, 48)       295168    
+_________________________________________________________________
+batch_normalization_36 (Batc (None, 256, 48, 48)       1024      
+_________________________________________________________________
+leaky_re_lu_7 (LeakyReLU)    (None, 256, 48, 48)       0         
+_________________________________________________________________
+conv2d_43 (Conv2D)           (None, 256, 24, 24)       590080    
+_________________________________________________________________
+batch_normalization_37 (Batc (None, 256, 24, 24)       1024      
+_________________________________________________________________
+leaky_re_lu_8 (LeakyReLU)    (None, 256, 24, 24)       0         
+_________________________________________________________________
+conv2d_44 (Conv2D)           (None, 512, 24, 24)       1180160   
+_________________________________________________________________
+batch_normalization_38 (Batc (None, 512, 24, 24)       2048      
+_________________________________________________________________
+leaky_re_lu_9 (LeakyReLU)    (None, 512, 24, 24)       0         
+_________________________________________________________________
+conv2d_45 (Conv2D)           (None, 512, 12, 12)       2359808   
+_________________________________________________________________
+batch_normalization_39 (Batc (None, 512, 12, 12)       2048      
+_________________________________________________________________
+leaky_re_lu_10 (LeakyReLU)   (None, 512, 12, 12)       0         
+_________________________________________________________________
+flatten (Flatten)            (None, 73728)             0         
+_________________________________________________________________
+dense (Dense)                (None, 1024)              75498496  
+_________________________________________________________________
+leaky_re_lu_11 (LeakyReLU)   (None, 1024)              0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 1)                 1025      
+_________________________________________________________________
+activation (Activation)      (None, 1)                 0         
+=================================================================
+Total params: 80,191,169
+Trainable params: 80,187,457
+Non-trainable params: 3,712
+_________________________________________________________________
+None
+Model: "functional_1"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+low-res-input (InputLayer)   [(None, 1, 24, 24)]       0         
+_________________________________________________________________
+Generator (Functional)       (None, 1, 192, 192)       1681729   
+_________________________________________________________________
+Discriminator (Functional)   (None, 1)                 80191169  
+=================================================================
+Total params: 81,872,898
+Trainable params: 1,677,505
+Non-trainable params: 80,195,393
+_________________________________________________________________
+None
+2021-01-30 00:10:34.901859: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 1681 of 4200
+2021-01-30 00:10:44.893609: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 3423 of 4200
+2021-01-30 00:10:49.289256: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:221] Shuffle buffer filled.
+2021-01-30 00:10:55.148199: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2021-01-30 00:15:24.423935: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2021-01-30 00:54:29.300291: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 1103 of 4200
+2021-01-30 00:54:35.580464: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 1104 of 4200
+2021-01-30 00:54:43.825207: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 2599 of 4200
+2021-01-30 00:54:53.405889: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:221] Shuffle buffer filled.
+Epoch 0001/0020, gen_loss: 0.44916149973869324, disc_loss: 0.39127570390701294, val_gen_loss: 0.4448239803314209, val_disc_loss: 0.6381933689117432, elapsed time from start: 3120.517477989197
+2021-01-30 01:02:58.080906: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 76 of 4200
+2021-01-30 01:03:05.710760: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 1648 of 4200
+2021-01-30 01:03:15.712007: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 3355 of 4200
+2021-01-30 01:03:21.924162: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:221] Shuffle buffer filled.
+2021-01-30 01:34:14.603166: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 0 of 4200
+2021-01-30 01:34:15.785865: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 1 of 4200
+2021-01-30 01:34:15.831589: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 2 of 4200
+2021-01-30 01:34:15.831630: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 3 of 4200
+2021-01-30 01:34:24.982823: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 1763 of 4200
+2021-01-30 01:34:35.070459: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 3155 of 4200
+2021-01-30 01:34:41.613495: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:221] Shuffle buffer filled.
+Epoch 0002/0020, gen_loss: 0.43302273750305176, disc_loss: 0.327504962682724, val_gen_loss: 0.4496287405490875, val_disc_loss: 0.6587111353874207, elapsed time from start: 5386.864770412445
+2021-01-30 01:40:31.481900: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 1339 of 4200
+2021-01-30 01:40:39.087429: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 2744 of 4200
+2021-01-30 01:40:48.077495: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:221] Shuffle buffer filled.
+2021-01-30 02:08:09.220170: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 0 of 4200
+2021-01-30 02:08:21.964311: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 1 of 4200
+2021-01-30 02:08:24.661809: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 373 of 4200
+2021-01-30 02:08:34.661682: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 2129 of 4200
+2021-01-30 02:08:44.807551: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 3403 of 4200
+2021-01-30 02:08:49.565266: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:221] Shuffle buffer filled.
+Epoch 0003/0020, gen_loss: 0.4234071671962738, disc_loss: 0.32730239629745483, val_gen_loss: 0.4547927677631378, val_disc_loss: 0.715631902217865, elapsed time from start: 7420.993116140366
+2021-01-30 02:14:43.307035: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 0 of 4200
+2021-01-30 02:15:02.201627: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 1 of 4200
+2021-01-30 02:15:02.201814: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 2 of 4200
+2021-01-30 02:15:02.201853: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 3 of 4200
+2021-01-30 02:15:02.995764: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 218 of 4200
+2021-01-30 02:15:13.053823: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 2162 of 4200
+2021-01-30 02:15:22.988360: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 3751 of 4200
+2021-01-30 02:15:25.580570: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:221] Shuffle buffer filled.
+2021-01-30 02:47:02.633304: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 220 of 4200
+2021-01-30 02:47:06.182322: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 221 of 4200
+2021-01-30 02:47:15.129835: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 2034 of 4200
+2021-01-30 02:47:25.134810: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 3634 of 4200
+2021-01-30 02:47:28.551097: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:221] Shuffle buffer filled.
+Epoch 0004/0020, gen_loss: 0.4115261435508728, disc_loss: 0.3270368278026581, val_gen_loss: 0.4635408818721771, val_disc_loss: 0.7151723504066467, elapsed time from start: 9735.666459560394
+2021-01-30 02:52:57.343999: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 1287 of 4200
+2021-01-30 02:53:05.309547: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 2757 of 4200
+2021-01-30 02:53:14.142002: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:221] Shuffle buffer filled.
+2021-01-30 03:22:14.175653: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 0 of 4200
+2021-01-30 03:22:39.537559: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 1 of 4200
+2021-01-30 03:22:40.919906: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 2 of 4200
+2021-01-30 03:22:40.919958: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 3 of 4200
+2021-01-30 03:22:40.919986: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 4 of 4200
+2021-01-30 03:22:40.920011: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 5 of 4200
+2021-01-30 03:22:40.920036: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 6 of 4200
+2021-01-30 03:22:40.920062: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 7 of 4200
+2021-01-30 03:22:48.571924: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 1626 of 4200
+2021-01-30 03:22:58.595311: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 3383 of 4200
+2021-01-30 03:23:03.846513: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:221] Shuffle buffer filled.
+Epoch 0005/0020, gen_loss: 0.3993176519870758, disc_loss: 0.32654520869255066, val_gen_loss: 0.4721722900867462, val_disc_loss: 0.6667656302452087, elapsed time from start: 11917.894724369049
+2021-01-30 03:29:37.311618: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 1 of 4200
+2021-01-30 03:29:37.311845: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 2 of 4200
+2021-01-30 03:29:44.379563: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 411 of 4200
+2021-01-30 03:29:49.317781: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 1388 of 4200
+2021-01-30 03:29:59.317230: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 2860 of 4200
+2021-01-30 03:30:07.813158: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:221] Shuffle buffer filled.
+2021-01-30 04:01:09.804613: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 1657 of 4200
+2021-01-30 04:01:17.287500: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 2836 of 4200
+2021-01-30 04:01:25.185473: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:221] Shuffle buffer filled.
+Epoch 0006/0020, gen_loss: 0.3873486816883087, disc_loss: 0.3255716860294342, val_gen_loss: 0.4801411032676697, val_disc_loss: 0.6839442849159241, elapsed time from start: 14184.898478031158
+2021-01-30 04:07:04.508641: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 1064 of 4200
+2021-01-30 04:07:14.494769: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 2883 of 4200
+2021-01-30 04:07:22.355377: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:221] Shuffle buffer filled.
+2021-01-30 04:38:32.351389: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 0 of 4200
+2021-01-30 04:38:36.899886: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 1 of 4200
+2021-01-30 04:38:37.829113: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 150 of 4200
+2021-01-30 04:38:48.882198: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 2190 of 4200
+2021-01-30 04:38:57.827244: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 3698 of 4200
+2021-01-30 04:39:00.946672: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:221] Shuffle buffer filled.
+Epoch 0007/0020, gen_loss: 0.37596091628074646, disc_loss: 0.3259163200855255, val_gen_loss: 0.484275758266449, val_disc_loss: 0.6764202117919922, elapsed time from start: 16435.35092663765
+2021-01-30 04:44:39.356598: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 185 of 4200
+2021-01-30 04:44:49.321384: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 1922 of 4200
+2021-01-30 04:44:59.328683: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 3276 of 4200
+2021-01-30 04:45:05.207125: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:221] Shuffle buffer filled.
+2021-01-30 05:17:40.020873: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 0 of 4200
+2021-01-30 05:18:28.014558: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 1 of 4200
+2021-01-30 05:18:32.539625: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 2 of 4200
+2021-01-30 05:18:32.539702: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 3 of 4200
+2021-01-30 05:18:32.539752: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 4 of 4200
+2021-01-30 05:18:32.539828: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 5 of 4200
+2021-01-30 05:18:32.539882: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 6 of 4200
+2021-01-30 05:18:32.539932: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 7 of 4200
+2021-01-30 05:18:32.539977: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 8 of 4200
+2021-01-30 05:18:37.903247: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 1158 of 4200
+2021-01-30 05:18:47.974988: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 2929 of 4200
+2021-01-30 05:18:55.855345: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:221] Shuffle buffer filled.
+Epoch 0008/0020, gen_loss: 0.365684449672699, disc_loss: 0.3258388936519623, val_gen_loss: 0.49309125542640686, val_disc_loss: 0.7141023874282837, elapsed time from start: 18877.831403255463
+2021-01-30 05:25:28.709284: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 1 of 4200
+2021-01-30 05:25:29.788324: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 275 of 4200
+2021-01-30 05:25:39.768775: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 2260 of 4200
+2021-01-30 05:25:49.807158: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 3892 of 4200
+2021-01-30 05:25:52.133079: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:221] Shuffle buffer filled.
+2021-01-30 05:57:31.917667: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 0 of 4200
+2021-01-30 05:58:02.355173: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 1 of 4200
+2021-01-30 05:58:02.588462: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 2 of 4200
+2021-01-30 05:58:02.588528: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 3 of 4200
+2021-01-30 05:58:02.588549: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 4 of 4200
+2021-01-30 05:58:09.439291: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 1455 of 4200
+2021-01-30 05:58:19.412984: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 3017 of 4200
+2021-01-30 05:58:26.657370: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:221] Shuffle buffer filled.
+Epoch 0009/0020, gen_loss: 0.3566138744354248, disc_loss: 0.3264326751232147, val_gen_loss: 0.5005679726600647, val_disc_loss: 0.6771940588951111, elapsed time from start: 21242.34181213379
+2021-01-30 06:04:43.790301: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 1985 of 4200
+2021-01-30 06:04:52.906828: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 3435 of 4200
+2021-01-30 06:04:57.317974: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:221] Shuffle buffer filled.
+2021-01-30 06:35:26.534323: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 0 of 4200
+2021-01-30 06:35:51.584795: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 1 of 4200
+2021-01-30 06:35:51.585295: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 2 of 4200
+2021-01-30 06:35:51.585354: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 3 of 4200
+2021-01-30 06:35:51.585437: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 4 of 4200
+2021-01-30 06:35:51.585480: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 5 of 4200
+2021-01-30 06:35:56.210437: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 1014 of 4200
+2021-01-30 06:36:06.256605: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 2802 of 4200
+2021-01-30 06:36:15.010582: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:221] Shuffle buffer filled.
+Epoch 0010/0020, gen_loss: 0.3485187292098999, disc_loss: 0.32589495182037354, val_gen_loss: 0.5020170211791992, val_disc_loss: 0.7140740156173706, elapsed time from start: 23505.795023679733
+2021-01-30 06:42:27.953145: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 1985 of 4200
+2021-01-30 06:42:37.893493: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 3370 of 4200
+2021-01-30 06:42:42.700068: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:221] Shuffle buffer filled.
+2021-01-30 07:13:47.218114: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 0 of 4200
+2021-01-30 07:13:54.740848: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 735 of 4200
+2021-01-30 07:14:04.726803: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 2275 of 4200
+2021-01-30 07:14:14.717583: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 3670 of 4200
+2021-01-30 07:14:17.986097: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:221] Shuffle buffer filled.
+Epoch 0011/0020, gen_loss: 0.3412577509880066, disc_loss: 0.32561057806015015, val_gen_loss: 0.5109938979148865, val_disc_loss: 0.7369961142539978, elapsed time from start: 25748.843319177628
+2021-01-30 07:19:52.901262: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 1845 of 4200
+2021-01-30 07:20:02.052433: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 3378 of 4200
+2021-01-30 07:20:06.926049: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:221] Shuffle buffer filled.
+2021-01-30 07:53:26.955345: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 0 of 4200
+2021-01-30 07:53:44.771064: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 1 of 4200
+2021-01-30 07:53:45.326869: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 2 of 4200
+2021-01-30 07:53:49.784338: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 907 of 4200
+2021-01-30 07:53:59.817689: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 2641 of 4200
+2021-01-30 07:54:09.598263: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:221] Shuffle buffer filled.
+Epoch 0012/0020, gen_loss: 0.33485716581344604, disc_loss: 0.325186550617218, val_gen_loss: 0.5149832963943481, val_disc_loss: 0.6935688257217407, elapsed time from start: 28263.787379980087
+2021-01-30 08:01:40.527637: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 1178 of 4200
+2021-01-30 08:01:50.456225: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 2961 of 4200
+2021-01-30 08:01:58.313962: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:221] Shuffle buffer filled.
+2021-01-30 08:37:46.168182: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 0 of 4200
+2021-01-30 08:38:05.925855: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 1 of 4200
+2021-01-30 08:38:06.836670: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 2 of 4200
+2021-01-30 08:38:12.401006: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 1006 of 4200
+2021-01-30 08:38:22.418163: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 2737 of 4200
+2021-01-30 08:38:31.469428: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:221] Shuffle buffer filled.
+Epoch 0013/0020, gen_loss: 0.32902342081069946, disc_loss: 0.3259775936603546, val_gen_loss: 0.5140727758407593, val_disc_loss: 0.6997384428977966, elapsed time from start: 30883.367335796356
+2021-01-30 08:45:33.309063: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 891 of 4200
+2021-01-30 08:45:40.708696: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 2225 of 4200
+2021-01-30 08:45:50.695662: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 3889 of 4200
+2021-01-30 08:45:52.664818: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:221] Shuffle buffer filled.
+2021-01-30 09:18:26.724697: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 0 of 4200
+2021-01-30 09:18:28.637165: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 1 of 4200
+2021-01-30 09:18:28.658436: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 2 of 4200
+2021-01-30 09:18:33.436221: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 669 of 4200
+2021-01-30 09:18:43.452705: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 2563 of 4200
+2021-01-30 09:18:53.404644: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:221] Shuffle buffer filled.
+Epoch 0014/0020, gen_loss: 0.32382312417030334, disc_loss: 0.32571130990982056, val_gen_loss: 0.5122742652893066, val_disc_loss: 0.70354825258255, elapsed time from start: 33252.00552868843
+2021-01-30 09:25:41.943193: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 0 of 4200
+2021-01-30 09:26:27.526639: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 1 of 4200
+2021-01-30 09:26:27.526823: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 2 of 4200
+2021-01-30 09:26:27.526903: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 3 of 4200
+2021-01-30 09:26:27.526968: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 4 of 4200
+2021-01-30 09:26:27.527022: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 5 of 4200
+2021-01-30 09:26:27.527063: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 6 of 4200
+2021-01-30 09:26:27.527098: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 7 of 4200
+2021-01-30 09:26:27.527135: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 8 of 4200
+2021-01-30 09:26:32.161857: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 1003 of 4200
+2021-01-30 09:26:42.158461: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 2885 of 4200
+2021-01-30 09:26:49.864926: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:221] Shuffle buffer filled.
+2021-01-30 10:00:17.758153: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 0 of 4200
+2021-01-30 10:00:21.642440: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 647 of 4200
+2021-01-30 10:00:31.664382: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 2292 of 4200
+2021-01-30 10:00:41.596761: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 3968 of 4200
+2021-01-30 10:00:43.094341: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:221] Shuffle buffer filled.
+Epoch 0015/0020, gen_loss: 0.31920287013053894, disc_loss: 0.3248891234397888, val_gen_loss: 0.5141982436180115, val_disc_loss: 0.7103323936462402, elapsed time from start: 35763.88461947441
+2021-01-30 10:06:53.024827: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 233 of 4200
+2021-01-30 10:06:55.440461: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 770 of 4200
+2021-01-30 10:07:05.405384: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 2672 of 4200
+2021-01-30 10:07:14.630531: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:221] Shuffle buffer filled.
+2021-01-30 10:42:26.325263: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 0 of 4200
+2021-01-30 10:42:42.036741: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 1 of 4200
+2021-01-30 10:42:42.037378: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 2 of 4200
+2021-01-30 10:42:49.649093: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 1630 of 4200
+2021-01-30 10:42:59.702518: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 3042 of 4200
+2021-01-30 10:43:06.804270: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:221] Shuffle buffer filled.
+Epoch 0016/0020, gen_loss: 0.31489500403404236, disc_loss: 0.32559454441070557, val_gen_loss: 0.5194064378738403, val_disc_loss: 0.7106987237930298, elapsed time from start: 38286.66672062874
+2021-01-30 10:48:53.208095: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 1213 of 4200
+2021-01-30 10:49:01.409268: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 2739 of 4200
+2021-01-30 10:49:11.497645: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 4081 of 4200
+2021-01-30 10:49:12.247822: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:221] Shuffle buffer filled.
+2021-01-30 11:20:34.659516: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 1451 of 4200
+2021-01-30 11:20:42.320535: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 2558 of 4200
+2021-01-30 11:20:52.354800: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 4177 of 4200
+2021-01-30 11:20:52.477672: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:221] Shuffle buffer filled.
+Epoch 0017/0020, gen_loss: 0.3112311363220215, disc_loss: 0.3250800371170044, val_gen_loss: 0.5209008455276489, val_disc_loss: 0.7330277562141418, elapsed time from start: 40553.7849547863
+2021-01-30 11:26:48.593624: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 0 of 4200
+2021-01-30 11:26:54.891435: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 1 of 4200
+2021-01-30 11:26:56.055574: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 2 of 4200
+2021-01-30 11:27:05.400233: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 1978 of 4200
+2021-01-30 11:27:15.427666: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 3363 of 4200
+2021-01-30 11:27:22.049693: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:221] Shuffle buffer filled.
+2021-01-30 12:04:47.190918: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 0 of 4200
+2021-01-30 12:05:30.354138: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 1 of 4200
+2021-01-30 12:05:30.792658: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 2 of 4200
+2021-01-30 12:05:30.792709: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 3 of 4200
+2021-01-30 12:05:30.792734: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 4 of 4200
+2021-01-30 12:05:30.792756: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 5 of 4200
+2021-01-30 12:05:39.006381: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 1479 of 4200
+2021-01-30 12:05:49.015086: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 3233 of 4200
+2021-01-30 12:05:54.096909: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:221] Shuffle buffer filled.
+Epoch 0018/0020, gen_loss: 0.307647168636322, disc_loss: 0.32565075159072876, val_gen_loss: 0.5250328779220581, val_disc_loss: 0.7656897306442261, elapsed time from start: 44026.44449329376
+2021-01-30 12:24:33.311553: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 0 of 4200
+2021-01-30 12:24:43.613551: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 1 of 4200
+2021-01-30 12:24:47.575353: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 893 of 4200
+2021-01-30 12:24:57.559916: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 2784 of 4200
+2021-01-30 12:25:06.089148: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:221] Shuffle buffer filled.
+2021-01-30 12:58:54.853608: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 1 of 4200
+2021-01-30 12:58:58.011760: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 510 of 4200
+2021-01-30 12:59:08.063370: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 2225 of 4200
+2021-01-30 12:59:18.001521: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 3847 of 4200
+2021-01-30 12:59:20.231475: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:221] Shuffle buffer filled.
+Epoch 0019/0020, gen_loss: 0.30437207221984863, disc_loss: 0.326567679643631, val_gen_loss: 0.5255981683731079, val_disc_loss: 0.6951963305473328, elapsed time from start: 46500.38267946243
+2021-01-30 13:05:53.778771: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 0 of 4200
+2021-01-30 13:06:08.429835: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 1 of 4200
+2021-01-30 13:06:08.917068: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 2 of 4200
+2021-01-30 13:06:10.448270: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 346 of 4200
+2021-01-30 13:06:20.499052: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 2114 of 4200
+2021-01-30 13:06:30.451927: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 3709 of 4200
+2021-01-30 13:06:33.217140: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:221] Shuffle buffer filled.
+2021-01-30 13:40:08.248486: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 0 of 4200
+2021-01-30 13:40:21.540673: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 1 of 4200
+2021-01-30 13:40:24.210193: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 571 of 4200
+2021-01-30 13:40:34.235800: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 2402 of 4200
+2021-01-30 13:40:44.199413: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 3953 of 4200
+2021-01-30 13:40:45.679835: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:221] Shuffle buffer filled.
+Epoch 0020/0020, gen_loss: 0.30133283138275146, disc_loss: 0.3256867825984955, val_gen_loss: 0.5231550335884094, val_disc_loss: 0.6890866756439209, elapsed time from start: 49015.86053395271
+WARNING:tensorflow:From /home/alejandro/projects/urban-flows/.env/lib/python3.7/site-packages/tensorflow/python/training/tracking/tracking.py:111: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+2021-01-30 13:47:48.292487: W tensorflow/python/util/util.cc:348] Sets are not currently considered sequences, but this may change in the future, so consider avoiding using them.
+WARNING:tensorflow:From /home/alejandro/projects/urban-flows/.env/lib/python3.7/site-packages/tensorflow/python/training/tracking/tracking.py:111: Layer.updates (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+2021-01-30 13:48:35.007524: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 301989888 exceeds 10% of free system memory.
+2021-01-30 13:48:42.333562: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 301989888 exceeds 10% of free system memory.
+2021-01-30 13:48:51.513518: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 301989888 exceeds 10% of free system memory.
