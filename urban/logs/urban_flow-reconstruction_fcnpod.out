@@ -1,0 +1,128 @@
+2021-03-16 19:13:29.015143: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2021-03-16 19:13:30.191626: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcuda.so.1
+2021-03-16 19:13:30.228010: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-16 19:13:30.228954: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0000:04:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-03-16 19:13:30.228987: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2021-03-16 19:13:30.231037: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2021-03-16 19:13:30.232586: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2021-03-16 19:13:30.232889: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2021-03-16 19:13:30.234870: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2021-03-16 19:13:30.236026: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2021-03-16 19:13:30.240527: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2021-03-16 19:13:30.240701: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-16 19:13:30.241727: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-16 19:13:30.242572: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0
+Using TensorFlow version:  2.3.0 , GPU: 1
+Using Keras version:  2.4.0
+2021-03-16 19:13:30.256285: I tensorflow/core/platform/profile_utils/cpu_utils.cc:104] CPU Frequency: 2500085000 Hz
+2021-03-16 19:13:30.258101: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x58eb840 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-03-16 19:13:30.258129: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-03-16 19:13:30.421741: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-16 19:13:30.422768: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5957c70 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-03-16 19:13:30.422832: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-03-16 19:13:30.423139: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-16 19:13:30.424360: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0000:04:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-03-16 19:13:30.424408: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2021-03-16 19:13:30.424445: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2021-03-16 19:13:30.424490: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2021-03-16 19:13:30.424520: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2021-03-16 19:13:30.424548: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2021-03-16 19:13:30.424574: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2021-03-16 19:13:30.424603: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2021-03-16 19:13:30.424692: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-16 19:13:30.425967: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-16 19:13:30.427127: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0
+2021-03-16 19:13:30.427185: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2021-03-16 19:13:31.339898: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1257] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-03-16 19:13:31.339969: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1263]      0 
+2021-03-16 19:13:31.339981: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1276] 0:   N 
+2021-03-16 19:13:31.340200: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-16 19:13:31.341099: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-16 19:13:31.341965: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1402] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10068 MB memory) -> physical GPU (device: 0, name: GeForce RTX 2080 Ti, pci bus id: 0000:04:00.0, compute capability: 7.5)
+The inputs are normalized to have a unit Gaussian distribution
+Model: "CNN-POD"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+high-res-input (InputLayer)  [(None, 2, 34, 17)]       0         
+_________________________________________________________________
+predic_01 (Conv2D)           (None, 128, 34, 17)       6528      
+_________________________________________________________________
+predic_02 (BatchNormalizatio (None, 128, 34, 17)       512       
+_________________________________________________________________
+predic_03 (MaxPooling2D)     (None, 128, 8, 8)         0         
+_________________________________________________________________
+predic_04 (Conv2D)           (None, 256, 8, 8)         295168    
+_________________________________________________________________
+predic_05 (BatchNormalizatio (None, 256, 8, 8)         1024      
+_________________________________________________________________
+predic_06 (MaxPooling2D)     (None, 256, 4, 4)         0         
+_________________________________________________________________
+predic_07 (Conv2D)           (None, 256, 4, 4)         590080    
+_________________________________________________________________
+predic_08 (BatchNormalizatio (None, 256, 4, 4)         1024      
+_________________________________________________________________
+predic_09 (MaxPooling2D)     (None, 256, 2, 2)         0         
+_________________________________________________________________
+predic_10 (Conv2D)           (None, 512, 2, 2)         1180160   
+_________________________________________________________________
+predic_11 (BatchNormalizatio (None, 512, 2, 2)         2048      
+_________________________________________________________________
+predic_12 (MaxPooling2D)     (None, 512, 1, 1)         0         
+_________________________________________________________________
+predic_13 (Conv2D)           (None, 512, 1, 1)         2359808   
+_________________________________________________________________
+flatten (Flatten)            (None, 512)               0         
+_________________________________________________________________
+dense (Dense)                (None, 1024)              525312    
+_________________________________________________________________
+dense_1 (Dense)              (None, 1)                 1025      
+=================================================================
+Total params: 4,962,689
+Trainable params: 4,960,385
+Non-trainable params: 2,304
+_________________________________________________________________
+None
+2021-03-16 19:13:33.770531: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2021-03-16 19:13:34.144592: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+Epoch 0001/0030, loss: 3.5752930641174316, val_loss: 0.7902801036834717, elapsed time from start: 9.467757225036621
+Epoch 0002/0030, loss: 0.32097920775413513, val_loss: 0.10434006154537201, elapsed time from start: 14.071596622467041
+Epoch 0003/0030, loss: 0.05348178371787071, val_loss: 0.024058649316430092, elapsed time from start: 18.488131761550903
+Epoch 0004/0030, loss: 0.010886802338063717, val_loss: 0.005009414628148079, elapsed time from start: 22.95749020576477
+Epoch 0005/0030, loss: 0.002665353938937187, val_loss: 0.0013686786405742168, elapsed time from start: 27.582642555236816
+Epoch 0006/0030, loss: 0.0007767386268824339, val_loss: 0.0006501531461253762, elapsed time from start: 31.95712900161743
+Epoch 0007/0030, loss: 0.0002747893158812076, val_loss: 0.0003563186328392476, elapsed time from start: 36.502055406570435
+Epoch 0008/0030, loss: 0.0001474221353419125, val_loss: 0.0002653050469234586, elapsed time from start: 41.14331912994385
+Epoch 0009/0030, loss: 0.0001389059325447306, val_loss: 0.0003064483171328902, elapsed time from start: 45.73258113861084
+Epoch 0010/0030, loss: 0.0001357219007331878, val_loss: 0.0002358691272092983, elapsed time from start: 50.25800371170044
+Epoch 0011/0030, loss: 0.00011516841186676174, val_loss: 0.0003928807273041457, elapsed time from start: 54.728787899017334
+Epoch 0012/0030, loss: 0.00018598188762553036, val_loss: 0.00037335261004045606, elapsed time from start: 59.21880841255188
+Epoch 0013/0030, loss: 0.00023598589177709073, val_loss: 0.0003254288749303669, elapsed time from start: 63.77738332748413
+Epoch 0014/0030, loss: 0.2900240123271942, val_loss: 99.49728393554688, elapsed time from start: 68.51879262924194
+Epoch 0015/0030, loss: 1.024071216583252, val_loss: 0.3739030361175537, elapsed time from start: 73.03277087211609
+Epoch 0016/0030, loss: 0.037919726222753525, val_loss: 0.006412588991224766, elapsed time from start: 77.57550048828125
+Epoch 0017/0030, loss: 0.0027358948718756437, val_loss: 0.00129303231369704, elapsed time from start: 82.10244154930115
+Epoch 0018/0030, loss: 0.0005919064860790968, val_loss: 0.0004219364491291344, elapsed time from start: 86.67435026168823
+Epoch 0019/0030, loss: 0.00020955641230102628, val_loss: 0.00028746353927999735, elapsed time from start: 91.1505970954895
+Epoch 0020/0030, loss: 0.00017955257499124855, val_loss: 0.00021941366139799356, elapsed time from start: 95.73095440864563
+Epoch 0021/0030, loss: 0.00023767478705849499, val_loss: 0.00028963820659555495, elapsed time from start: 100.31916975975037
+Epoch 0022/0030, loss: 0.0002786333207041025, val_loss: 0.00025324945454485714, elapsed time from start: 104.81324005126953
+Epoch 0023/0030, loss: 0.00022819721198175102, val_loss: 0.0006133308634161949, elapsed time from start: 109.42057275772095
+Epoch 0024/0030, loss: 0.0003081534814555198, val_loss: 0.0003034041728824377, elapsed time from start: 113.87975072860718
+Epoch 0025/0030, loss: 0.0002663849154487252, val_loss: 0.0019198750378564, elapsed time from start: 118.40807747840881
+Epoch 0026/0030, loss: 0.0006091066170483828, val_loss: 0.00028306854073889554, elapsed time from start: 123.09465765953064
+Epoch 0027/0030, loss: 0.0007898144540376961, val_loss: 0.00037835826515220106, elapsed time from start: 127.76801633834839
+Epoch 0028/0030, loss: 0.0007005274528637528, val_loss: 0.0005699860048480332, elapsed time from start: 132.15647268295288
+Epoch 0029/0030, loss: 0.000938488868996501, val_loss: 0.0017778370529413223, elapsed time from start: 136.77558946609497
+Epoch 0030/0030, loss: 0.000890496070496738, val_loss: 0.001013746252283454, elapsed time from start: 141.24919533729553
+WARNING:tensorflow:From /home/alejandro/projects/urban-flows/.env/lib/python3.7/site-packages/tensorflow/python/training/tracking/tracking.py:111: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+2021-03-16 19:15:54.500407: W tensorflow/python/util/util.cc:348] Sets are not currently considered sequences, but this may change in the future, so consider avoiding using them.
+WARNING:tensorflow:From /home/alejandro/projects/urban-flows/.env/lib/python3.7/site-packages/tensorflow/python/training/tracking/tracking.py:111: Layer.updates (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
