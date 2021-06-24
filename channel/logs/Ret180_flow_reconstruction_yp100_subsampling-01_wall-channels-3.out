@@ -1,0 +1,132 @@
+2021-02-04 12:35:29.989805: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2021-02-04 12:35:31.154539: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcuda.so.1
+2021-02-04 12:35:33.071184: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-02-04 12:35:33.072026: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0000:04:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-02-04 12:35:33.072065: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2021-02-04 12:35:33.074508: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2021-02-04 12:35:33.076395: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2021-02-04 12:35:33.076764: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2021-02-04 12:35:33.079116: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2021-02-04 12:35:33.080425: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2021-02-04 12:35:33.085654: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2021-02-04 12:35:33.085816: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-02-04 12:35:33.086675: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-02-04 12:35:33.087434: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0
+Using TensorFlow version:  2.3.0 , GPU: 1
+Using Keras version:  2.4.0
+2021-02-04 12:35:33.298140: I tensorflow/core/platform/profile_utils/cpu_utils.cc:104] CPU Frequency: 2500020000 Hz
+2021-02-04 12:35:33.299455: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x50ee7b0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-02-04 12:35:33.299485: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-02-04 12:35:33.454242: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-02-04 12:35:33.455288: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x515ac00 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-02-04 12:35:33.455341: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-02-04 12:35:33.455627: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-02-04 12:35:33.456409: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0000:04:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-02-04 12:35:33.456451: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2021-02-04 12:35:33.456482: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2021-02-04 12:35:33.456517: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2021-02-04 12:35:33.456541: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2021-02-04 12:35:33.456563: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2021-02-04 12:35:33.456584: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2021-02-04 12:35:33.456607: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2021-02-04 12:35:33.456681: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-02-04 12:35:33.457467: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-02-04 12:35:33.458211: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0
+2021-02-04 12:35:33.458254: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2021-02-04 12:35:34.388488: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1257] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-02-04 12:35:34.388545: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1263]      0 
+2021-02-04 12:35:34.388558: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1276] 0:   N 
+2021-02-04 12:35:34.388780: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-02-04 12:35:34.389496: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-02-04 12:35:34.390147: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1402] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10068 MB memory) -> physical GPU (device: 0, name: GeForce RTX 2080 Ti, pci bus id: 0000:04:00.0, compute capability: 7.5)
+The inputs are normalized to have a unit Gaussian distribution
+Model: "CNN-POD"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+high-res-input (InputLayer)  [(None, 3, 192, 192)]     0         
+_________________________________________________________________
+predic_01 (Conv2D)           (None, 128, 192, 192)     9728      
+_________________________________________________________________
+predic_02 (BatchNormalizatio (None, 128, 192, 192)     512       
+_________________________________________________________________
+predic_03 (MaxPooling2D)     (None, 128, 96, 96)       0         
+_________________________________________________________________
+predic_04 (Conv2D)           (None, 256, 96, 96)       295168    
+_________________________________________________________________
+predic_05 (BatchNormalizatio (None, 256, 96, 96)       1024      
+_________________________________________________________________
+predic_06 (MaxPooling2D)     (None, 256, 48, 48)       0         
+_________________________________________________________________
+predic_07 (Conv2D)           (None, 256, 48, 48)       590080    
+_________________________________________________________________
+predic_08 (BatchNormalizatio (None, 256, 48, 48)       1024      
+_________________________________________________________________
+predic_09 (MaxPooling2D)     (None, 256, 24, 24)       0         
+_________________________________________________________________
+predic_10 (Conv2D)           (None, 512, 24, 24)       1180160   
+_________________________________________________________________
+predic_11 (BatchNormalizatio (None, 512, 24, 24)       2048      
+_________________________________________________________________
+predic_12 (MaxPooling2D)     (None, 512, 12, 12)       0         
+_________________________________________________________________
+predic_13 (Conv2D)           (None, 512, 12, 12)       2359808   
+_________________________________________________________________
+predic_14 (BatchNormalizatio (None, 512, 12, 12)       2048      
+_________________________________________________________________
+predic_15 (Conv2D)           (None, 64, 12, 12)        294976    
+=================================================================
+Total params: 4,736,576
+Trainable params: 4,733,248
+Non-trainable params: 3,328
+_________________________________________________________________
+None
+2021-02-04 12:35:52.130599: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 1987 of 4200
+2021-02-04 12:36:02.174432: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 4081 of 4200
+2021-02-04 12:36:02.699570: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:221] Shuffle buffer filled.
+2021-02-04 12:36:04.247603: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2021-02-04 12:36:06.885359: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2021-02-04 12:40:20.158017: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 1731 of 4200
+2021-02-04 12:40:30.245165: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 3889 of 4200
+2021-02-04 12:40:31.871272: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:221] Shuffle buffer filled.
+Epoch 0001/0030, loss: 6.673007488250732, val_loss: 2.207946300506592, elapsed time from start: 330.94756412506104
+Epoch 0002/0030, loss: 0.9618130326271057, val_loss: 0.3111177682876587, elapsed time from start: 612.132646560669
+Epoch 0003/0030, loss: 0.144224613904953, val_loss: 0.05720961466431618, elapsed time from start: 889.7005610466003
+Epoch 0004/0030, loss: 0.03474084287881851, val_loss: 0.023121438920497894, elapsed time from start: 1167.5984375476837
+Epoch 0005/0030, loss: 0.018940014764666557, val_loss: 0.017390668392181396, elapsed time from start: 1444.935245513916
+Epoch 0006/0030, loss: 0.016627328470349312, val_loss: 0.016696564853191376, elapsed time from start: 1719.9707927703857
+Epoch 0007/0030, loss: 0.01625855639576912, val_loss: 0.01679251156747341, elapsed time from start: 1996.9572207927704
+Epoch 0008/0030, loss: 0.016149291768670082, val_loss: 0.016672810539603233, elapsed time from start: 2274.6945650577545
+Epoch 0009/0030, loss: 0.016093134880065918, val_loss: 0.01663222163915634, elapsed time from start: 2550.874131679535
+Epoch 0010/0030, loss: 0.016052277758717537, val_loss: 0.01673569716513157, elapsed time from start: 2827.048041820526
+Epoch 0011/0030, loss: 0.01601908914744854, val_loss: 0.016680272296071053, elapsed time from start: 3101.562049627304
+Epoch 0012/0030, loss: 0.01595982350409031, val_loss: 0.016657253727316856, elapsed time from start: 3378.7775197029114
+Epoch 0013/0030, loss: 0.015893641859292984, val_loss: 0.01662326604127884, elapsed time from start: 3655.1305623054504
+Epoch 0014/0030, loss: 0.015832306817173958, val_loss: 0.01663469709455967, elapsed time from start: 3930.1140360832214
+Epoch 0015/0030, loss: 0.015775948762893677, val_loss: 0.016712933778762817, elapsed time from start: 4207.701784849167
+Epoch 0016/0030, loss: 0.01572214998304844, val_loss: 0.01665937714278698, elapsed time from start: 4482.497039794922
+Epoch 0017/0030, loss: 0.01567595638334751, val_loss: 0.01660834439098835, elapsed time from start: 4756.648110628128
+Epoch 0018/0030, loss: 0.015620730817317963, val_loss: 0.016621215268969536, elapsed time from start: 5032.3958106040955
+Epoch 0019/0030, loss: 0.015576754696667194, val_loss: 0.016646040603518486, elapsed time from start: 5297.756704568863
+Epoch 0020/0030, loss: 0.015529223717749119, val_loss: 0.016654063016176224, elapsed time from start: 5560.482196807861
+Epoch 0021/0030, loss: 0.015481812879443169, val_loss: 0.016687823459506035, elapsed time from start: 5827.39155292511
+Epoch 0022/0030, loss: 0.015439779497683048, val_loss: 0.01672823540866375, elapsed time from start: 6095.890288352966
+Epoch 0023/0030, loss: 0.015397737734019756, val_loss: 0.016725733876228333, elapsed time from start: 6363.080939292908
+Epoch 0024/0030, loss: 0.015353405848145485, val_loss: 0.016735121607780457, elapsed time from start: 6630.50506567955
+Epoch 0025/0030, loss: 0.01531819999217987, val_loss: 0.016720836982131004, elapsed time from start: 6897.56817650795
+Epoch 0026/0030, loss: 0.015277658589184284, val_loss: 0.016757918521761894, elapsed time from start: 7167.9486248493195
+Epoch 0027/0030, loss: 0.015238504856824875, val_loss: 0.016796842217445374, elapsed time from start: 7442.820174694061
+Epoch 0028/0030, loss: 0.015204785391688347, val_loss: 0.016849780455231667, elapsed time from start: 7711.794607400894
+Epoch 0029/0030, loss: 0.015168110840022564, val_loss: 0.016836851835250854, elapsed time from start: 7974.6373879909515
+Epoch 0030/0030, loss: 0.01513840351253748, val_loss: 0.016840405762195587, elapsed time from start: 8238.865896940231
+WARNING:tensorflow:From /home/alejandro/projects/urban-flows/.env/lib/python3.7/site-packages/tensorflow/python/training/tracking/tracking.py:111: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+2021-02-04 14:53:05.843820: W tensorflow/python/util/util.cc:348] Sets are not currently considered sequences, but this may change in the future, so consider avoiding using them.
+WARNING:tensorflow:From /home/alejandro/projects/urban-flows/.env/lib/python3.7/site-packages/tensorflow/python/training/tracking/tracking.py:111: Layer.updates (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.

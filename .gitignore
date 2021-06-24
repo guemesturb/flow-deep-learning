@@ -1,1 +1,9 @@
 __pycache__/
+.env/
+*.npz
+*.png
+*.pdf
+*.log
+*.out
+run_training_reconstruction.py
+urban/

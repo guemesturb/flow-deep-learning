@@ -1,0 +1,371 @@
+2021-02-09 13:38:37.294306: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2021-02-09 13:42:57.119086: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcuda.so.1
+2021-02-09 13:43:00.809002: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-02-09 13:43:00.810619: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0000:04:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-02-09 13:43:00.810697: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2021-02-09 13:43:09.812366: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2021-02-09 13:43:13.612141: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2021-02-09 13:43:14.564909: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2021-02-09 13:43:24.054424: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2021-02-09 13:43:25.171920: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2021-02-09 13:43:45.068086: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2021-02-09 13:43:45.068419: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-02-09 13:43:45.069582: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-02-09 13:43:45.070593: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0
+Using TensorFlow version:  2.3.0 , GPU: 1
+Using Keras version:  2.4.0
+2021-02-09 13:43:46.174598: I tensorflow/core/platform/profile_utils/cpu_utils.cc:104] CPU Frequency: 2499825000 Hz
+2021-02-09 13:43:46.176071: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x4d79df0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-02-09 13:43:46.176107: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-02-09 13:43:47.667740: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-02-09 13:43:47.668732: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x4de6230 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-02-09 13:43:47.668788: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-02-09 13:43:47.703871: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-02-09 13:43:47.705256: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0000:04:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-02-09 13:43:47.705333: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2021-02-09 13:43:47.705401: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2021-02-09 13:43:47.705468: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2021-02-09 13:43:47.705517: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2021-02-09 13:43:47.705562: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2021-02-09 13:43:47.705607: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2021-02-09 13:43:47.705654: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2021-02-09 13:43:47.705789: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-02-09 13:43:47.707145: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-02-09 13:43:47.708407: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0
+2021-02-09 13:43:47.785629: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2021-02-09 13:44:46.798036: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1257] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-02-09 13:44:46.798134: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1263]      0 
+2021-02-09 13:44:46.798164: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1276] 0:   N 
+2021-02-09 13:44:46.934062: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-02-09 13:44:46.934925: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:982] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-02-09 13:44:46.935728: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1402] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10068 MB memory) -> physical GPU (device: 0, name: GeForce RTX 2080 Ti, pci bus id: 0000:04:00.0, compute capability: 7.5)
+The inputs are normalized to have a unit Gaussian distribution
+Model: "Generator"
+__________________________________________________________________________________________________
+Layer (type)                    Output Shape         Param #     Connected to                     
+==================================================================================================
+low-res-input (InputLayer)      [(None, 3, 96, 96)]  0                                            
+__________________________________________________________________________________________________
+conv2d (Conv2D)                 (None, 64, 96, 96)   15616       low-res-input[0][0]              
+__________________________________________________________________________________________________
+p_re_lu (PReLU)                 (None, 64, 96, 96)   64          conv2d[0][0]                     
+__________________________________________________________________________________________________
+conv2d_1 (Conv2D)               (None, 64, 96, 96)   36928       p_re_lu[0][0]                    
+__________________________________________________________________________________________________
+batch_normalization (BatchNorma (None, 64, 96, 96)   256         conv2d_1[0][0]                   
+__________________________________________________________________________________________________
+p_re_lu_1 (PReLU)               (None, 64, 96, 96)   64          batch_normalization[0][0]        
+__________________________________________________________________________________________________
+conv2d_2 (Conv2D)               (None, 64, 96, 96)   36928       p_re_lu_1[0][0]                  
+__________________________________________________________________________________________________
+batch_normalization_1 (BatchNor (None, 64, 96, 96)   256         conv2d_2[0][0]                   
+__________________________________________________________________________________________________
+add (Add)                       (None, 64, 96, 96)   0           p_re_lu[0][0]                    
+                                                                 batch_normalization_1[0][0]      
+__________________________________________________________________________________________________
+conv2d_3 (Conv2D)               (None, 64, 96, 96)   36928       add[0][0]                        
+__________________________________________________________________________________________________
+batch_normalization_2 (BatchNor (None, 64, 96, 96)   256         conv2d_3[0][0]                   
+__________________________________________________________________________________________________
+p_re_lu_2 (PReLU)               (None, 64, 96, 96)   64          batch_normalization_2[0][0]      
+__________________________________________________________________________________________________
+conv2d_4 (Conv2D)               (None, 64, 96, 96)   36928       p_re_lu_2[0][0]                  
+__________________________________________________________________________________________________
+batch_normalization_3 (BatchNor (None, 64, 96, 96)   256         conv2d_4[0][0]                   
+__________________________________________________________________________________________________
+add_1 (Add)                     (None, 64, 96, 96)   0           add[0][0]                        
+                                                                 batch_normalization_3[0][0]      
+__________________________________________________________________________________________________
+conv2d_5 (Conv2D)               (None, 64, 96, 96)   36928       add_1[0][0]                      
+__________________________________________________________________________________________________
+batch_normalization_4 (BatchNor (None, 64, 96, 96)   256         conv2d_5[0][0]                   
+__________________________________________________________________________________________________
+p_re_lu_3 (PReLU)               (None, 64, 96, 96)   64          batch_normalization_4[0][0]      
+__________________________________________________________________________________________________
+conv2d_6 (Conv2D)               (None, 64, 96, 96)   36928       p_re_lu_3[0][0]                  
+__________________________________________________________________________________________________
+batch_normalization_5 (BatchNor (None, 64, 96, 96)   256         conv2d_6[0][0]                   
+__________________________________________________________________________________________________
+add_2 (Add)                     (None, 64, 96, 96)   0           add_1[0][0]                      
+                                                                 batch_normalization_5[0][0]      
+__________________________________________________________________________________________________
+conv2d_7 (Conv2D)               (None, 64, 96, 96)   36928       add_2[0][0]                      
+__________________________________________________________________________________________________
+batch_normalization_6 (BatchNor (None, 64, 96, 96)   256         conv2d_7[0][0]                   
+__________________________________________________________________________________________________
+p_re_lu_4 (PReLU)               (None, 64, 96, 96)   64          batch_normalization_6[0][0]      
+__________________________________________________________________________________________________
+conv2d_8 (Conv2D)               (None, 64, 96, 96)   36928       p_re_lu_4[0][0]                  
+__________________________________________________________________________________________________
+batch_normalization_7 (BatchNor (None, 64, 96, 96)   256         conv2d_8[0][0]                   
+__________________________________________________________________________________________________
+add_3 (Add)                     (None, 64, 96, 96)   0           add_2[0][0]                      
+                                                                 batch_normalization_7[0][0]      
+__________________________________________________________________________________________________
+conv2d_9 (Conv2D)               (None, 64, 96, 96)   36928       add_3[0][0]                      
+__________________________________________________________________________________________________
+batch_normalization_8 (BatchNor (None, 64, 96, 96)   256         conv2d_9[0][0]                   
+__________________________________________________________________________________________________
+p_re_lu_5 (PReLU)               (None, 64, 96, 96)   64          batch_normalization_8[0][0]      
+__________________________________________________________________________________________________
+conv2d_10 (Conv2D)              (None, 64, 96, 96)   36928       p_re_lu_5[0][0]                  
+__________________________________________________________________________________________________
+batch_normalization_9 (BatchNor (None, 64, 96, 96)   256         conv2d_10[0][0]                  
+__________________________________________________________________________________________________
+add_4 (Add)                     (None, 64, 96, 96)   0           add_3[0][0]                      
+                                                                 batch_normalization_9[0][0]      
+__________________________________________________________________________________________________
+conv2d_11 (Conv2D)              (None, 64, 96, 96)   36928       add_4[0][0]                      
+__________________________________________________________________________________________________
+batch_normalization_10 (BatchNo (None, 64, 96, 96)   256         conv2d_11[0][0]                  
+__________________________________________________________________________________________________
+p_re_lu_6 (PReLU)               (None, 64, 96, 96)   64          batch_normalization_10[0][0]     
+__________________________________________________________________________________________________
+conv2d_12 (Conv2D)              (None, 64, 96, 96)   36928       p_re_lu_6[0][0]                  
+__________________________________________________________________________________________________
+batch_normalization_11 (BatchNo (None, 64, 96, 96)   256         conv2d_12[0][0]                  
+__________________________________________________________________________________________________
+add_5 (Add)                     (None, 64, 96, 96)   0           add_4[0][0]                      
+                                                                 batch_normalization_11[0][0]     
+__________________________________________________________________________________________________
+conv2d_13 (Conv2D)              (None, 64, 96, 96)   36928       add_5[0][0]                      
+__________________________________________________________________________________________________
+batch_normalization_12 (BatchNo (None, 64, 96, 96)   256         conv2d_13[0][0]                  
+__________________________________________________________________________________________________
+p_re_lu_7 (PReLU)               (None, 64, 96, 96)   64          batch_normalization_12[0][0]     
+__________________________________________________________________________________________________
+conv2d_14 (Conv2D)              (None, 64, 96, 96)   36928       p_re_lu_7[0][0]                  
+__________________________________________________________________________________________________
+batch_normalization_13 (BatchNo (None, 64, 96, 96)   256         conv2d_14[0][0]                  
+__________________________________________________________________________________________________
+add_6 (Add)                     (None, 64, 96, 96)   0           add_5[0][0]                      
+                                                                 batch_normalization_13[0][0]     
+__________________________________________________________________________________________________
+conv2d_15 (Conv2D)              (None, 64, 96, 96)   36928       add_6[0][0]                      
+__________________________________________________________________________________________________
+batch_normalization_14 (BatchNo (None, 64, 96, 96)   256         conv2d_15[0][0]                  
+__________________________________________________________________________________________________
+p_re_lu_8 (PReLU)               (None, 64, 96, 96)   64          batch_normalization_14[0][0]     
+__________________________________________________________________________________________________
+conv2d_16 (Conv2D)              (None, 64, 96, 96)   36928       p_re_lu_8[0][0]                  
+__________________________________________________________________________________________________
+batch_normalization_15 (BatchNo (None, 64, 96, 96)   256         conv2d_16[0][0]                  
+__________________________________________________________________________________________________
+add_7 (Add)                     (None, 64, 96, 96)   0           add_6[0][0]                      
+                                                                 batch_normalization_15[0][0]     
+__________________________________________________________________________________________________
+conv2d_17 (Conv2D)              (None, 64, 96, 96)   36928       add_7[0][0]                      
+__________________________________________________________________________________________________
+batch_normalization_16 (BatchNo (None, 64, 96, 96)   256         conv2d_17[0][0]                  
+__________________________________________________________________________________________________
+p_re_lu_9 (PReLU)               (None, 64, 96, 96)   64          batch_normalization_16[0][0]     
+__________________________________________________________________________________________________
+conv2d_18 (Conv2D)              (None, 64, 96, 96)   36928       p_re_lu_9[0][0]                  
+__________________________________________________________________________________________________
+batch_normalization_17 (BatchNo (None, 64, 96, 96)   256         conv2d_18[0][0]                  
+__________________________________________________________________________________________________
+add_8 (Add)                     (None, 64, 96, 96)   0           add_7[0][0]                      
+                                                                 batch_normalization_17[0][0]     
+__________________________________________________________________________________________________
+conv2d_19 (Conv2D)              (None, 64, 96, 96)   36928       add_8[0][0]                      
+__________________________________________________________________________________________________
+batch_normalization_18 (BatchNo (None, 64, 96, 96)   256         conv2d_19[0][0]                  
+__________________________________________________________________________________________________
+p_re_lu_10 (PReLU)              (None, 64, 96, 96)   64          batch_normalization_18[0][0]     
+__________________________________________________________________________________________________
+conv2d_20 (Conv2D)              (None, 64, 96, 96)   36928       p_re_lu_10[0][0]                 
+__________________________________________________________________________________________________
+batch_normalization_19 (BatchNo (None, 64, 96, 96)   256         conv2d_20[0][0]                  
+__________________________________________________________________________________________________
+add_9 (Add)                     (None, 64, 96, 96)   0           add_8[0][0]                      
+                                                                 batch_normalization_19[0][0]     
+__________________________________________________________________________________________________
+conv2d_21 (Conv2D)              (None, 64, 96, 96)   36928       add_9[0][0]                      
+__________________________________________________________________________________________________
+batch_normalization_20 (BatchNo (None, 64, 96, 96)   256         conv2d_21[0][0]                  
+__________________________________________________________________________________________________
+p_re_lu_11 (PReLU)              (None, 64, 96, 96)   64          batch_normalization_20[0][0]     
+__________________________________________________________________________________________________
+conv2d_22 (Conv2D)              (None, 64, 96, 96)   36928       p_re_lu_11[0][0]                 
+__________________________________________________________________________________________________
+batch_normalization_21 (BatchNo (None, 64, 96, 96)   256         conv2d_22[0][0]                  
+__________________________________________________________________________________________________
+add_10 (Add)                    (None, 64, 96, 96)   0           add_9[0][0]                      
+                                                                 batch_normalization_21[0][0]     
+__________________________________________________________________________________________________
+conv2d_23 (Conv2D)              (None, 64, 96, 96)   36928       add_10[0][0]                     
+__________________________________________________________________________________________________
+batch_normalization_22 (BatchNo (None, 64, 96, 96)   256         conv2d_23[0][0]                  
+__________________________________________________________________________________________________
+p_re_lu_12 (PReLU)              (None, 64, 96, 96)   64          batch_normalization_22[0][0]     
+__________________________________________________________________________________________________
+conv2d_24 (Conv2D)              (None, 64, 96, 96)   36928       p_re_lu_12[0][0]                 
+__________________________________________________________________________________________________
+batch_normalization_23 (BatchNo (None, 64, 96, 96)   256         conv2d_24[0][0]                  
+__________________________________________________________________________________________________
+add_11 (Add)                    (None, 64, 96, 96)   0           add_10[0][0]                     
+                                                                 batch_normalization_23[0][0]     
+__________________________________________________________________________________________________
+conv2d_25 (Conv2D)              (None, 64, 96, 96)   36928       add_11[0][0]                     
+__________________________________________________________________________________________________
+batch_normalization_24 (BatchNo (None, 64, 96, 96)   256         conv2d_25[0][0]                  
+__________________________________________________________________________________________________
+p_re_lu_13 (PReLU)              (None, 64, 96, 96)   64          batch_normalization_24[0][0]     
+__________________________________________________________________________________________________
+conv2d_26 (Conv2D)              (None, 64, 96, 96)   36928       p_re_lu_13[0][0]                 
+__________________________________________________________________________________________________
+batch_normalization_25 (BatchNo (None, 64, 96, 96)   256         conv2d_26[0][0]                  
+__________________________________________________________________________________________________
+add_12 (Add)                    (None, 64, 96, 96)   0           add_11[0][0]                     
+                                                                 batch_normalization_25[0][0]     
+__________________________________________________________________________________________________
+conv2d_27 (Conv2D)              (None, 64, 96, 96)   36928       add_12[0][0]                     
+__________________________________________________________________________________________________
+batch_normalization_26 (BatchNo (None, 64, 96, 96)   256         conv2d_27[0][0]                  
+__________________________________________________________________________________________________
+p_re_lu_14 (PReLU)              (None, 64, 96, 96)   64          batch_normalization_26[0][0]     
+__________________________________________________________________________________________________
+conv2d_28 (Conv2D)              (None, 64, 96, 96)   36928       p_re_lu_14[0][0]                 
+__________________________________________________________________________________________________
+batch_normalization_27 (BatchNo (None, 64, 96, 96)   256         conv2d_28[0][0]                  
+__________________________________________________________________________________________________
+add_13 (Add)                    (None, 64, 96, 96)   0           add_12[0][0]                     
+                                                                 batch_normalization_27[0][0]     
+__________________________________________________________________________________________________
+conv2d_29 (Conv2D)              (None, 64, 96, 96)   36928       add_13[0][0]                     
+__________________________________________________________________________________________________
+batch_normalization_28 (BatchNo (None, 64, 96, 96)   256         conv2d_29[0][0]                  
+__________________________________________________________________________________________________
+p_re_lu_15 (PReLU)              (None, 64, 96, 96)   64          batch_normalization_28[0][0]     
+__________________________________________________________________________________________________
+conv2d_30 (Conv2D)              (None, 64, 96, 96)   36928       p_re_lu_15[0][0]                 
+__________________________________________________________________________________________________
+batch_normalization_29 (BatchNo (None, 64, 96, 96)   256         conv2d_30[0][0]                  
+__________________________________________________________________________________________________
+add_14 (Add)                    (None, 64, 96, 96)   0           add_13[0][0]                     
+                                                                 batch_normalization_29[0][0]     
+__________________________________________________________________________________________________
+conv2d_31 (Conv2D)              (None, 64, 96, 96)   36928       add_14[0][0]                     
+__________________________________________________________________________________________________
+batch_normalization_30 (BatchNo (None, 64, 96, 96)   256         conv2d_31[0][0]                  
+__________________________________________________________________________________________________
+p_re_lu_16 (PReLU)              (None, 64, 96, 96)   64          batch_normalization_30[0][0]     
+__________________________________________________________________________________________________
+conv2d_32 (Conv2D)              (None, 64, 96, 96)   36928       p_re_lu_16[0][0]                 
+__________________________________________________________________________________________________
+batch_normalization_31 (BatchNo (None, 64, 96, 96)   256         conv2d_32[0][0]                  
+__________________________________________________________________________________________________
+add_15 (Add)                    (None, 64, 96, 96)   0           add_14[0][0]                     
+                                                                 batch_normalization_31[0][0]     
+__________________________________________________________________________________________________
+conv2d_33 (Conv2D)              (None, 64, 96, 96)   36928       add_15[0][0]                     
+__________________________________________________________________________________________________
+batch_normalization_32 (BatchNo (None, 64, 96, 96)   256         conv2d_33[0][0]                  
+__________________________________________________________________________________________________
+add_16 (Add)                    (None, 64, 96, 96)   0           p_re_lu[0][0]                    
+                                                                 batch_normalization_32[0][0]     
+__________________________________________________________________________________________________
+conv2d_34 (Conv2D)              (None, 256, 96, 96)  147712      add_16[0][0]                     
+__________________________________________________________________________________________________
+lambda (Lambda)                 (None, 64, 192, 192) 0           conv2d_34[0][0]                  
+__________________________________________________________________________________________________
+leaky_re_lu (LeakyReLU)         (None, 64, 192, 192) 0           lambda[0][0]                     
+__________________________________________________________________________________________________
+conv2d_35 (Conv2D)              (None, 3, 192, 192)  15555       leaky_re_lu[0][0]                
+==================================================================================================
+Total params: 1,407,043
+Trainable params: 1,402,819
+Non-trainable params: 4,224
+__________________________________________________________________________________________________
+None
+Model: "Discriminator"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+high-res-input (InputLayer)  [(None, 3, 192, 192)]     0         
+_________________________________________________________________
+conv2d_36 (Conv2D)           (None, 64, 192, 192)      1792      
+_________________________________________________________________
+leaky_re_lu_1 (LeakyReLU)    (None, 64, 192, 192)      0         
+_________________________________________________________________
+conv2d_37 (Conv2D)           (None, 64, 96, 96)        36928     
+_________________________________________________________________
+batch_normalization_33 (Batc (None, 64, 96, 96)        256       
+_________________________________________________________________
+leaky_re_lu_2 (LeakyReLU)    (None, 64, 96, 96)        0         
+_________________________________________________________________
+conv2d_38 (Conv2D)           (None, 128, 96, 96)       73856     
+_________________________________________________________________
+batch_normalization_34 (Batc (None, 128, 96, 96)       512       
+_________________________________________________________________
+leaky_re_lu_3 (LeakyReLU)    (None, 128, 96, 96)       0         
+_________________________________________________________________
+conv2d_39 (Conv2D)           (None, 128, 48, 48)       147584    
+_________________________________________________________________
+batch_normalization_35 (Batc (None, 128, 48, 48)       512       
+_________________________________________________________________
+leaky_re_lu_4 (LeakyReLU)    (None, 128, 48, 48)       0         
+_________________________________________________________________
+conv2d_40 (Conv2D)           (None, 256, 48, 48)       295168    
+_________________________________________________________________
+batch_normalization_36 (Batc (None, 256, 48, 48)       1024      
+_________________________________________________________________
+leaky_re_lu_5 (LeakyReLU)    (None, 256, 48, 48)       0         
+_________________________________________________________________
+conv2d_41 (Conv2D)           (None, 256, 24, 24)       590080    
+_________________________________________________________________
+batch_normalization_37 (Batc (None, 256, 24, 24)       1024      
+_________________________________________________________________
+leaky_re_lu_6 (LeakyReLU)    (None, 256, 24, 24)       0         
+_________________________________________________________________
+conv2d_42 (Conv2D)           (None, 512, 24, 24)       1180160   
+_________________________________________________________________
+batch_normalization_38 (Batc (None, 512, 24, 24)       2048      
+_________________________________________________________________
+leaky_re_lu_7 (LeakyReLU)    (None, 512, 24, 24)       0         
+_________________________________________________________________
+conv2d_43 (Conv2D)           (None, 512, 12, 12)       2359808   
+_________________________________________________________________
+batch_normalization_39 (Batc (None, 512, 12, 12)       2048      
+_________________________________________________________________
+leaky_re_lu_8 (LeakyReLU)    (None, 512, 12, 12)       0         
+_________________________________________________________________
+flatten (Flatten)            (None, 73728)             0         
+_________________________________________________________________
+dense (Dense)                (None, 1024)              75498496  
+_________________________________________________________________
+leaky_re_lu_9 (LeakyReLU)    (None, 1024)              0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 1)                 1025      
+_________________________________________________________________
+activation (Activation)      (None, 1)                 0         
+=================================================================
+Total params: 80,192,321
+Trainable params: 80,188,609
+Non-trainable params: 3,712
+_________________________________________________________________
+None
+Model: "functional_1"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+low-res-input (InputLayer)   [(None, 3, 96, 96)]       0         
+_________________________________________________________________
+Generator (Functional)       (None, 3, 192, 192)       1407043   
+_________________________________________________________________
+Discriminator (Functional)   (None, 1)                 80192321  
+=================================================================
+Total params: 81,599,364
+Trainable params: 1,402,819
+Non-trainable params: 80,196,545
+_________________________________________________________________
+None
+2021-02-09 13:45:20.415194: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 1285 of 4200
+2021-02-09 13:45:30.425504: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 3255 of 4200
+2021-02-09 13:45:35.232902: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:221] Shuffle buffer filled.
+2021-02-09 13:45:37.305854: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2021-02-09 13:46:18.713031: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
