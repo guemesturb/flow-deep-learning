@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sat Jan 24 00:43:25 2021
+Created on Sat Jan 23 23:03:09 2021
 @author: aguemes
 """
 
@@ -34,24 +34,15 @@ from tensorflow import keras
 
 def main():
 
-    dataset_test, nx, nz, n_samp = load_tfrecords(save_path, yp_flow, batch_size, n_prefetch, shuffle_buffer)
-
-    model_name = f"Ret{Ret}_super-resolution_subsampling-{subsampling_lr:02d}_wall-channels-{channels}"
+    model_name = f"Ret{Ret}_flow-gan_yp-{yp_flow:03d}_subsampling-{subsampling_lr:02d}"
     model_name = f"{models_path}{model_name}_generator.tf"
     generator = keras.models.load_model(model_name)
-    
-    model_name = f"{models_path}Ret{Ret}_flow-reconstruction_yp{yp_flow:03d}_subsampling-01_wall-channels-{channels}_predictor.tf"
-    predictor = keras.models.load_model(model_name)
-    
-    gan_input = keras.Input(shape=(channels, int(nz/ subsampling_lr), int(nx / subsampling_lr)), name='low-res-input')
-    x = generator(gan_input)
-    gan_output = predictor(x)
-    
-    gan = keras.Model(inputs=gan_input, outputs=gan_output)
 
-    X_lr_target = np.zeros((n_samp, channels, int(nz / subsampling_lr), int(nx / subsampling_lr)))
-    Y_hr_target = np.zeros((n_samp, 3, nz, nx))
-    Y_hr_predic = np.zeros((n_samp, n_required_modes, Nz, Nx))
+    dataset_test, nx, nz, n_samp = load_tfrecords(save_path, yp_flow, batch_size, n_prefetch, shuffle_buffer)
+
+    X_hr_target = np.zeros((n_samp, channels, int(nz/subsampling_lr), int(nx/subsampling_lr)))
+    Y_hr_target = np.zeros((n_samp, channels, nz, nx))
+    Y_hr_predic = np.zeros((n_samp, channels, nz, nx))
 
     itr = iter(dataset_test)
 
@@ -59,89 +50,24 @@ def main():
 
         print(i)
 
-        (X_lr_target[i:(i+batch_size), :, :, :], Y_hr_target[i:(i+batch_size), :, :, :]) = next(itr)
-        Y_hr_predic[i:(i+batch_size), :, :, :] = gan.predict(X_lr_target[i:(i+batch_size), :, :, :])
+        (X_hr_target[i:(i+batch_size), :, :, :], Y_hr_target[i:(i+batch_size), :, :, :]) = next(itr)
+        Y_hr_predic[i:(i+batch_size), :, :, :] = generator.predict(X_hr_target[i:(i+batch_size), :, :, :])
 
-    with np.load(f'/storage2/alejandro/urban/re{Ret}/PODbase_yp{yp_flow:03d}.npz') as data:
+    filename = f"{prediction_path}/Ret{Ret}_flow-gan_yp-{yp_flow:03d}_subsampling-{subsampling_lr:02d}.npz" 
 
-        phi_u   = data['phi'][:, :Px*Pz]
-        phi_v   = data['phi'][:, Px*Pz:2*Px*Pz]
-        phi_w   = data['phi'][:, 2*Px*Pz:]
-
-    X_pred = np.zeros((n_samp * Nx * Nz, n_required_modes))
-
-    nS=0
-
-    for t in range(n_samp):
-    
-        for i in range(Nx):
-
-            for k in range(Nz):
-                        
-                X_pred[nS, :] = Y_hr_predic[t, : ,k ,i]
-
-                nS += 1
-
-    U_pred = np.matmul(X_pred, phi_u[:n_required_modes, :])
-    V_pred = np.matmul(X_pred, phi_v[:n_required_modes, :])
-    W_pred = np.matmul(X_pred, phi_w[:n_required_modes, :])
-
-    del X_pred
-
-    Y_pred_u = np.zeros((n_samp, Nz*Pz, Nx*Px))
-    Y_pred_v = np.zeros((n_samp, Nz*Pz, Nx*Px))
-    Y_pred_w = np.zeros((n_samp, Nz*Pz, Nx*Px))
-
-    nS = 0
-
-    avg_outer_path = path_input + '/.avg/'
-    std_out = []
-    var_outer = ['u','v','w']
-
-    for i in range(3):
-        
-        std_out.append(np.loadtxt(avg_outer_path + var_outer[i] + '_rms' + '.m')[ypos[str(yp_flow)], 1])
-    
-    for t in range(n_samp):
-
-        for i in range(Nx):
-
-            for k in range(Nz):
-
-                Y_pred_u[t, Pz*k:Pz*(k+1), Px*i:Px*(i+1)] = np.reshape(U_pred[nS, :], (Pz, Px)) / std_out[0]
-                Y_pred_v[t, Pz*k:Pz*(k+1), Px*i:Px*(i+1)] = np.reshape(V_pred[nS, :], (Pz, Px)) / std_out[1]
-                Y_pred_w[t, Pz*k:Pz*(k+1), Px*i:Px*(i+1)] = np.reshape(W_pred[nS, :], (Pz, Px)) / std_out[2]
-                
-                nS += 1
-
-    del U_pred, V_pred, W_pred
-
-    Y_pred_u = np.expand_dims(Y_pred_u, axis=1)
-    Y_pred_v = np.expand_dims(Y_pred_v, axis=1)
-    Y_pred_w = np.expand_dims(Y_pred_w, axis=1)
-
-    Y_hr_predic = np.concatenate(
-        (Y_pred_u, Y_pred_v, Y_pred_w),
-        axis=1
-    )
-
-    error_u = np.mean((Y_hr_target[:, 0, :, :] - Y_hr_predic[:, 0, :, :]) ** 2)
-    print(error_u)
-    error_v = np.mean((Y_hr_target[:, 1, :, :] - Y_hr_predic[:, 1, :, :]) ** 2)
-    print(error_v)
-    error_w = np.mean((Y_hr_target[:, 2, :, :] - Y_hr_predic[:, 2, :, :]) ** 2)
-    print(error_w)
-
-    filename = f"{prediction_path}/Ret{Ret}_flow-reconstruction_predictions_separated_yp{yp_flow:03d}_subsampling-{subsampling_lr:02d}_wall-channels-{channels}.npz" 
+    for i in range(Y_hr_target.shape[1]):
+        error = np.mean((Y_hr_target[:, i, :, :] - Y_hr_predic[:, i, :, :]) ** 2)
+        print(error)
 
     np.savez(
         filename, 
-        X_lr_target=X_lr_target,
+        X_hr_target=X_hr_target,
         Y_hr_target=Y_hr_target,
         Y_hr_predic=Y_hr_predic
     )
 
     return
+
 
 
 def load_tfrecords(tfr_path, yp_flow, batch_size, n_prefetch, shuffle_buffer):
@@ -155,7 +81,7 @@ def load_tfrecords(tfr_path, yp_flow, batch_size, n_prefetch, shuffle_buffer):
     regex = re.compile(f"yp{yp_flow}")
 
     tfr_files = sorted([string for string in tfr_files if re.search(regex, string)])
- 
+
     regex = re.compile(f"subsampling{subsampling_lr}")
 
     tfr_files = sorted([string for string in tfr_files if re.search(regex, string)])
@@ -214,7 +140,7 @@ def load_tfrecords(tfr_path, yp_flow, batch_size, n_prefetch, shuffle_buffer):
     
 
     # Parsing datasets 
-    dataset_test = tfr_files_test_ds.map(tf_parser, num_parallel_calls=tf.data.experimental.AUTOTUNE)
+    dataset_test = tfr_files_test_ds.map(lambda x: tf_parser(x, subsampling_lr), num_parallel_calls=tf.data.experimental.AUTOTUNE)
     # dataset_test = dataset_test.shuffle(shuffle_buffer)
     dataset_test = dataset_test.batch(batch_size=batch_size)
     dataset_test = dataset_test.prefetch(n_prefetch)
@@ -223,7 +149,7 @@ def load_tfrecords(tfr_path, yp_flow, batch_size, n_prefetch, shuffle_buffer):
 
 
 @tf.function
-def tf_parser(rec):
+def tf_parser(rec, subsampling):
     '''
     This is a parser function. It defines the template for
     interpreting the examples you're feeding in. Basically, 
@@ -235,27 +161,18 @@ def tf_parser(rec):
         'n_x': tf.io.FixedLenFeature([], tf.int64),
         'n_y': tf.io.FixedLenFeature([], tf.int64),
         'n_z': tf.io.FixedLenFeature([], tf.int64),
-        'n_modes': tf.io.FixedLenFeature([], tf.int64),
-        'subsampling': tf.io.FixedLenFeature([], tf.int64),
-        'wall_lr_raw1': tf.io.FixedLenSequenceFeature([], tf.float32, allow_missing=True),
-        'wall_lr_raw2': tf.io.FixedLenSequenceFeature([], tf.float32, allow_missing=True),
-        'wall_lr_raw3': tf.io.FixedLenSequenceFeature([], tf.float32, allow_missing=True),
         'wall_hr_raw1': tf.io.FixedLenSequenceFeature([], tf.float32, allow_missing=True),
         'wall_hr_raw2': tf.io.FixedLenSequenceFeature([], tf.float32, allow_missing=True),
         'wall_hr_raw3': tf.io.FixedLenSequenceFeature([], tf.float32, allow_missing=True),
         'flow_hr_raw1': tf.io.FixedLenSequenceFeature([], tf.float32, allow_missing=True),
         'flow_hr_raw2': tf.io.FixedLenSequenceFeature([], tf.float32, allow_missing=True),
-        'flow_hr_raw3': tf.io.FixedLenSequenceFeature([], tf.float32, allow_missing=True)
+        'flow_hr_raw3': tf.io.FixedLenSequenceFeature([], tf.float32, allow_missing=True),
         }
 
     parsed_rec = tf.io.parse_single_example(rec, features)
 
-    nx_hr = tf.cast(parsed_rec['n_x'], tf.int32)
-    nz_hr = tf.cast(parsed_rec['n_z'], tf.int32)
-    n_modes = tf.cast(parsed_rec['n_modes'], tf.int32)
-    subsampling = tf.cast(parsed_rec['subsampling'], tf.int32)
-    nx_lr = nx_hr / subsampling
-    nz_lr = nz_hr / subsampling 
+    nx = tf.cast(parsed_rec['n_x'], tf.int32)
+    nz = tf.cast(parsed_rec['n_z'], tf.int32)
 
     # Scaling data at wall
 
@@ -270,27 +187,13 @@ def tf_parser(rec):
 
     # Low-resolution processing --------------------------------------------------------
 
-    if subsampling_lr == 1:
+    inputs = tf.reshape((parsed_rec['wall_hr_raw1']-avgs_in[0])/std_in[0],(1, nz, nx))
 
-        inputs = tf.reshape((parsed_rec['wall_hr_raw1']-avgs_in[0])/std_in[0],(1,nz_hr, nx_hr))
+    for i_comp in range(1, channels):
 
-        for i_comp in range(1, channels):
+        inputs = tf.concat((inputs, tf.reshape((parsed_rec[f'wall_hr_raw{i_comp+1}']-avgs_in[i_comp])/std_in[i_comp],(1, nz, nx))),0)
 
-            inputs = tf.concat((inputs, tf.reshape((parsed_rec[f'wall_hr_raw{i_comp+1}']-avgs_in[i_comp])/std_in[i_comp],(1,nz_hr, nx_hr))),0)
-
-    else:
-
-        inputs = tf.reshape((parsed_rec['wall_lr_raw1']-avgs_in[0])/std_in[0],(1,nz_lr, nx_lr))
-
-        for i_comp in range(1, channels):
-
-            inputs = tf.concat((inputs, tf.reshape((parsed_rec[f'wall_lr_raw{i_comp+1}']-avgs_in[i_comp])/std_in[i_comp],(1,nz_lr, nx_lr))),0)
-
-    # High-resolution processing --------------------------------------------------------
-
-    # Output processing
-    
-    # Scaling data at flow
+    inputs = inputs[:, ::subsampling, ::subsampling]
 
     avg_outer_path = path_input + '/.avg/'
 
@@ -304,14 +207,15 @@ def tf_parser(rec):
 
         avgs_out.append(np.loadtxt(avg_outer_path + 'mean_' + var_outer[i] + '.m')[ypos[str(yp_flow)], 1])
         std_out.append(np.loadtxt(avg_outer_path + var_outer[i] + '_rms' + '.m')[ypos[str(yp_flow)], 1])
-
+    print(std_out)
+    kkkk
     # High-resolution processing --------------------------------------------------------
 
-    outputs = tf.reshape((parsed_rec['flow_hr_raw1']-avgs_out[0])/std_out[0],(1,nz_hr, nx_hr))
+    outputs = tf.reshape((parsed_rec['flow_hr_raw1']-avgs_out[0])/std_out[0],(1, nz, nx))
 
-    for i_comp in range(1, 3):
+    for i_comp in range(1, channels):
 
-        outputs = tf.concat((outputs, tf.reshape((parsed_rec[f'flow_hr_raw{i_comp+1}']-avgs_out[i_comp])/std_out[i_comp],(1,nz_hr, nx_hr))),0)
+        outputs = tf.concat((outputs, tf.reshape((parsed_rec[f'flow_hr_raw{i_comp+1}']-avgs_out[i_comp])/std_out[i_comp],(1, nz, nx))),0)
 
     return inputs, outputs
 
@@ -321,7 +225,7 @@ if __name__ == '__main__':
     Ret = 180
     epochs = 100
     yp_wall = 0
-    yp_flow = 15
+    yp_flow = 50
     channels = 3
     batch_size = 8
     n_prefetch = 4
@@ -334,10 +238,7 @@ if __name__ == '__main__':
 
         Nx = 12
         Nz = 12
-        Px = 16
-        Pz = 16
         interv = 3
-        n_required_modes = 64
         max_samples_per_tfr = 120
         save_path = "/storage2/alejandro/urban/re180/test/.tfrecords/"
         models_path = "/storage2/alejandro/urban/re180/models/"

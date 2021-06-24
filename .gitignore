@@ -3,3 +3,7 @@ __pycache__/
 *.npz
 *.png
 *.pdf
+*.log
+*.out
+run_training_reconstruction.py
+urban/
