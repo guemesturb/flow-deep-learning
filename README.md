@@ -45,13 +45,14 @@ This repository has been used for the following scientific publications:
 Güemes, A., Discetti, S., Ianiro, A., Sirmacek, B., Azizpour, H., & Vinuesa, R. (2021). From coarse wall measurements to turbulent velocity fields with deep learning. *arXiv preprint arXiv:2103.07387.*
 
 ## **Authorship**
-This repository has been developed in collaboration between the KTH Royal Institute of Technology and Universidad Carloss III de Madrid. The following researches and students are acknowledged for their contributions:
+This repository has been developed in collaboration between the KTH Royal Institute of Technology and Universidad Carloss III de Madrid. The following researches and students, alphabetically lister, are acknowledged for their contributions:
 - Alejandro Güemes
-- Hampus Tober
-- Beril Sirmacek
-- Stefano Discetti
 - Andrea Ianiro
+- Beril Sirmacek
+- Hampus Tober
 - Hossein Azizpour
+- Ricardo Vinuesa
+- Stefano Discetti
 
 ## **Contributing**
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
