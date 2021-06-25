@@ -19,13 +19,16 @@ pip install -r requirements.txt
 To generate the tfrecord files, execute:
 
 ```console
-guest@local:~$ python run_generate_tfrecords.py 
+guest@local:~$ python run_generate_tfrecords_training.py 
+guest@local:~$ python run_generate_tfrecords_testing.py 
 ```
 
 To run the training procedure, execute:
 
 ```console
-guest@vegeta:~$ python run_training --case channel --upsampling 4 --model_name architecture01 --learning_rate 1e-4
+guest@vegeta:~$ python run_training_resolution_gan.py
+guest@vegeta:~$ python run_training_reconstruction_gan.py
+guest@vegeta:~$ python run_training_reconstruction_fcnpod.py
 ```
 
 To compute the prediction of the testing dataset, execute:
