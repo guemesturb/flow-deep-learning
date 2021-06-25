@@ -19,28 +19,30 @@ pip install -r requirements.txt
 To generate the tfrecord files, execute:
 
 ```console
-guest@local:~$ python run_generate_tfrecords_training.py 
-guest@local:~$ python run_generate_tfrecords_testing.py 
+guest@king:~$ python run_generate_tfrecords_training.py 
+guest@king:~$ python run_generate_tfrecords_testing.py 
 ```
 
 To run the training procedure, execute:
 
 ```console
-guest@vegeta:~$ python run_training_resolution_gan.py
-guest@vegeta:~$ python run_training_reconstruction_gan.py
-guest@vegeta:~$ python run_training_reconstruction_fcnpod.py
+guest@king:~$ python run_training_resolution_gan.py
+guest@king:~$ python run_training_reconstruction_gan.py
+guest@king:~$ python run_training_reconstruction_fcnpod.py
 ```
 
 To compute the prediction of the testing dataset, execute:
 
 ```console
-guest@vegeta:~$ python run_predictions -c channel -u 4 -m architecture01 -l 1e-4
+guest@king:~$ python run_predictions_resolution_gan.py
+guest@king:~$ python run_predictions_reconstruction_gan.py
+guest@king:~$ python run_predictions_reconstruction_fcnpod.py
 ```
 
 ## **Publications**
 This repository has been used for the following scientific publications:
 
-*To be announced*
+Güemes, A., Tober, H., Discetti, S., Ianiro, A., Sirmacek, B., Azizpour, H., & Vinuesa, R. (2021). From coarse wall measurements to turbulent velocity fields with deep learning. *arXiv preprint arXiv:2103.07387.*
 
 ## **Authorship**
 This repository has been developed in collaboration between the KTH Royal Institute of Technology and Universidad Carloss III de Madrid. The following researches and students are acknowledged for their contributions:
