@@ -1,4 +1,4 @@
-# **Reconstruction of wall turbulence data thorugh deep learning**
+# **Reconstruction of turbulent flows thorugh deep learning**
 
 This repository contains several Python implementation of deep neural networks for the resolution enhancement of turbulent wall measurements and the reconstruction of turbulent velocity fields from wall data.
 
