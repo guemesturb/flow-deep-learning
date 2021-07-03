@@ -42,7 +42,7 @@ guest@king:~$ python run_predictions_reconstruction_fcnpod.py
 ## **Publications**
 This repository has been used for the following scientific publications:
 
-Güemes, A., Discetti, S., Ianiro, A., Sirmacek, B., Azizpour, H., & Vinuesa, R. (2021). From coarse wall measurements to turbulent velocity fields with deep learning. *arXiv preprint arXiv:2103.07387.*
+Güemes, A., Discetti, S., Ianiro, A., Sirmacek, B., Azizpour, H., & Vinuesa, R. (2021). From coarse wall measurements to turbulent velocity fields through deep learning. *arXiv preprint arXiv:2103.07387.*
 
 ## **Authorship**
 This repository has been developed in collaboration between the KTH Royal Institute of Technology and Universidad Carloss III de Madrid. The following researches and students, alphabetically lister, are acknowledged for their contributions:
